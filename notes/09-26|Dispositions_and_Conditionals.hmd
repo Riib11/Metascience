@@ -1,0 +1,127 @@
+# Dispositions and Conditionals
+
+::style style/main.css
+
+_paper by David Manley and Ryan Wasserman_
+
+
+
+## Necessity and Possibility
+
+### Machinery of Possible worlds comparisons
+
+$$
+    \Box P : \text{ it is necessary that } P \\
+    \Diamond P : \text{ is is possible that } P
+    \text{ also have the following compositions: } \\
+    \Diamond P = \sim \Box \sim P \\
+    \Box P = \sim \Diamond \sim P \\
+    \sim \Diamond P = \Box \sim P
+$$
+
+Since $\Box$ and $\Diamond$ can be designed in terms of each other, then only really need one of them axiomatically.
+
+Some interesting axioms you could introduce
+
+$$
+    S4 : \Box P \implies \Box \Box P \\
+    \sim \Box \Box P \implies \sim \Box P \\
+    T : \Box P \implies P
+$$
+
+_Note_. Could think of $\Box$ and $\Diamond$ as representing different things. Like $\Box P$ meaning "epistemically a priori true". Or $\Box P$ meaning ""
+
+What are possible worlds?
+- Concrete objects (Lewis, Carnap)
+- Abstract entities
+- Properties, a way _everything_ might be (Stalmaker)
+- Maximal sets of consistent, constant propositions ()
+- Maxiaml states of affairs
+
+Most common system of modal logic: S5. Has that every world is _accessible_ to every other (accessibility is an equivelance relation).
+
+The $\Box\Diamond$ logic system looks really nice and is easy to use, so people are comitted. But, there are a lot of problematic implications from it.
+
+
+### Types of Necessity/Possibility
+
+#### Logical
+
+$\Box P \iff P$ is True in _all_ possible worlds.
+
+#### Metaphyisical
+
+$\Diamond P \iff P$ is True in at least one possible world.
+
+#### Nomic
+
+$P$ is nomically possible relative to world $W$ iff there is some $P$-world whose laws match $w$'s laws.
+
+Consider the "twater" situation (Hillary Putnam). _twater_ is the same as water in every way, expect it is made of XYZ instead of H2O which are very distinct. It is true that water _could_ be have been twater, in a modal sense? the orthodoxy says no. It says that the meaning of water _is_ H20, so water could not be twater. But there are other perpectives.
+
+#### Physical
+
+
+
+## Similarity Metric for Possible Worlds
+
+Very controversial. What factors as relevant to similarity? For example,
+
+> "If Cesar fought in Korea, he would have used catapults."
+
+as compared to
+
+> "If Cesar fought in Korea, he would have used tanks."
+
+It really depends on the context to say which is true. Which is the closest world? Hard to say.
+
+Think of how "here" is used. It means different things in different linguistic contexts; it is just a linguistic tool and doesn't have a metaphysical grounding (see _Demonstratives_ by Kaplan), so can't delve into metaphysical uestions about "here". Do counterfactuals behave like this?
+
+Quine on coextentionality problem: a property can't be just a set of things with that property, becaues the actuality of those sets doesn't necessarily reflect what we mean by them (two sets are the same if they have the same members, but that doesn't mean the properties are the same). Need to refer to possibilities.
+
+What is the semantic value to a referring expression? Just the thing being referred to.
+
+Predicates: _intension_ (set of possible things that satisfy the predicate)
+Names: _extension_ (thing named), _intension_ (function from worlds to the extension)
+Sentences: _extension_ (truth value), _intension_ (function from worlds to truth values)
+
+Sentences are decided by the intensions/extensions of their component names and predicates. But this construction doesn't take into account contexts. A context is the tuple $\langle \text{speaker}, \text{place}, \text{time} \rangle$.
+
+So, before we can fully explain how context relates to content, we are just talking philosophy of language and can't really do much in the way of metaphysics.
+
+## Modal Analysis
+
+What is $P \Box \rightarrow Q$? Read this as "if $P$ is true, then $Q$ would be true" (counterfactual dependence). Its weaker than $\Box(P \rightarrow Q)$ (every world $P$ is true, $Q$ is true) and stronger than $\Diamond(P \land Q)$ (are copossible). It seems like $P \Box \rightarrow Q$ is talking about close possible worlds.
+
+$P \Box \rightarrow Q$ is true at a world $W$ if $P \rightarrow Q$ is true in all the _nearest_ $P$-worlds to $W$ (includes ties).
+
+Is really hard to come up with an analysis of measuring similarity between world. Lewis thinks that we won't be able to come up with a standard, constant analysis, but as long as our analysis changes all together with our similarity judgements, then we are ok (swinging rope bridge over gorge analogy).
+
+
+
+## Analysis of Dispositions
+
+#### Conditional dispositional predicates
+
+- fragile, inflammible, etc.
+
+#### Canonical dispositional predicates
+
+- is disposed to $\phi$ (manifestation conditions) when $\psi$ (stimulus conditions)
+- is disposed to $\phi$
+
+#### Subjunctive conditional
+
+- if it would $A$ then it would $B$
+- is constructed from the conditional dispositional predicates to the cononical dispositional predicates to these
+
+
+
+## Solutions to Dispositions with Conditionals
+
+### Counterexample to final solution presented
+
+- So, poison is disposed to kill if ingested because in most of close enough possible worlds, for some context of "enough"
+- Need some measurement of change that compares different units, like a world that is different in some temperature to a world that is different in the location of an object (a difference that is non-negligable)
+- But then, moving the location of the poison, say, as far as away as you need to make it not poisonous, is possible. But this doesn't seem right?
+- *But*, distance seems to not matter to the similarity ranking...

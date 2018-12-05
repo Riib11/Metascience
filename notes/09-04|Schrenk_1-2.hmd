@@ -1,0 +1,50 @@
+# 2018-09-04
+
+::style style/main.css
+
+## Chapter 1: Prologue
+
+Talks about the history of philosophy of science. There was the rise of *Rationalism* (includes Descartes, Leibniz) explored how you could do away with the senses.
+
+Then there was *Empiricism*, which rejected Rationalism and relied on observable methods to tell about the world. Included the likes of Hume.
+
+Then, *Transcendental Idealism*, pioneered by Kant, mediates between Rationalism and Empiricism, claiming that there needs to be a sort of mix of both in applying our rationality to the world. Introduces the _synthetic vs analytic_ distinction.
+
+Then *Logical Empiricism*, some time after Kant, renews his ideas but revises them as well in order to incorporate new philosophical and scientific findings, such as the non-Euclidean nature of space as described by Einstein.
+
+Finally, there is the *Demolition*: the fall of Logical Empiricism. Here, even logical processes of the mind are scrutinized as precepted by inherent concepts and influences. Additionally, the problems of verification are brought forefront alongside the problems with induction, where you can always change your theory rather than reject it. _Meaning-holism_ dispatches the synthetic-analytic distinction.
+
+## Chapter 2: Dispositions
+
+A thing has a disposition to do an action if the thing normally tends to do the action. Of course, this "definition" utilizes some loaded terms, and the specification ends up being very non-trivial. Carnap suggests this:
+
+$$
+\begin{cases}
+    D &: \text{ "has a disposition to disolve in water"} \\
+    T &: \text{ "is placed in water"} \\
+    R &: \text{ "does disolve" } \\
+\end{cases} \\
+
+D x =_{\text{def}} T x \implies R x
+
+$$
+
+But this doesn't quite work, as Carnap points out. There are two main problems: *Void Satisfaction* and *Random Coincidence*. One way to think about a better answer is to introduce modality.
+
+Perhaps a concept of causation could also save dispositions? This requires _causal power_.
+
+Notions of *Natural Properties* and *Natural Laws*. Eino Kaila suggests a new definition for disposition:
+
+$$
+    D x =_{\text{def}} \exists F ( F x \land \exists y (F y \land T y) \land \forall z ((F z \land T z) \implies R z))
+$$
+
+This avoids Void Satisfaction! Basically, assigns a disposition to a thing if in general other things that are like it in the relevant way carry out the manifestation of the disposition.
+
+*Nominalism*: What are properties? Are there inherent patterns in nature? Nominalism says no, properties are nothing more that the set of objects that satisfy them.
+- But how can we restrict predicates to avoid problems? Laws of nature seem to be more fundamental than Nominalism makes them out to be.
+
+*Categoricalism*: "The Categoricalists' belief is that alleged dispositional properties of objects are reducible to these objects' categorical features plus, maybe, laws of nature or causation or other addenda."
+
+*Humean Supervenience*: "It is the doctrine that all there is to the world is a vast mosaic of local matters of particular fact, just one little thing and then another. [. . .] For short: we have an arrangement of qualities. And that is all there is. There is no differ- ence without a difference in the arrangement of qualities. All else supervenes on that."
+- Computer-screen metaphor

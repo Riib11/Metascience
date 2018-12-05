@@ -1,0 +1,189 @@
+\documentclass{article}
+
+%------------------------------------------------
+% Imports
+%------------------------------------------------
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+% citation hyperlinks
+\usepackage[colorlinks,allcolors=red]{hyperref}
+
+%------------------------------------------------
+% Settings
+%------------------------------------------------
+
+%------------------------------------------------
+% Commands
+%------------------------------------------------
+\newcommand{\tx}[1]{\text{#1}}
+\newcommand{\ti}[1]{\textit{#1}}
+\newcommand{\p}{^\prime}
+
+% citations
+\renewcommand{\cite}[1]{\hyperlink{#1}{#1}}
+\newcommand{\reference}[3]{\bibitem{#1} \hypertarget{#1}{} #1. \ti{#2}}
+
+% annotated bibliography
+\newcommand{\annbibtitle}[2]{\subsection*{#1. \ti{#2}}}
+
+\begin{document} % +===+===+===+===+===+===+===+
+
+%------------------------------------------------
+% Title
+%------------------------------------------------
+\begin{center}
+	\huge{\bf Dependent Autonomy} % paper title
+    \\[0.75cm] 
+	\large{Henry Blanchette} % paper author
+    \\[0.5cm]
+	\large{Metaphysics of Science \\ Reed College} % paper organization
+    \\[1.0cm]
+\end{center}
+
+%------------------------------------------------
+% Abstract
+%------------------------------------------------
+\begin{abstract}
+	This is the abstract.
+\end{abstract}
+
+%------------------------------------------------
+% Introduction
+%------------------------------------------------
+\section{Introduction}
+
+This is the introduction.
+
+% Citation example:
+A thought that a previous philosopher wrote about (\cite{Wilson J. 2018}).
+
+%------------------------------------------------
+% Bibliography
+%------------------------------------------------
+% TODO: decide if newpage or not
+\newpage
+% TODO: order once all the entries are in
+\begin{thebibliography}{9}
+
+\reference{Wilson J. 2018}{Metaphysical Emergence}
+    {Department of Philosophy at University of Toronto, ON CA}
+
+\reference{Fodor J. A. 1974}{Special Sciences}
+    {\ti{Synthese}, Vol. 28, No. 2 (Oct., 1974), pp. 97-115. Springer}
+
+\reference{Bedau M. 2018}{Downward Causation and the Autonomy of Weak Emergence}
+    {Department of Philosophy at Reed College, OR USA}
+
+\reference{Bedau M. 2008}{Is Weak Emergence Just in the Mind?}
+    {Minds and Machines 18:443–459. Springer}
+
+\reference{Wolfram S. 1985}{Undecidability and Intractability in Theoretical Physics}
+    {Physical Review Letters, Volume 54 Number 8. The American Physical Society}
+
+\reference{McLaughin B. P. 1992}{The Rise and Fall of British Emergentism}
+    {Reprinted in M. A. Bedau \& P. Humphreys (Eds.). (2008). \ti{Emergence: Contemporary readings in philosophy and science} (pp. 19-60). Cambridge: MIT Press}
+
+\reference{McLaughin B. P. 1997}{Emergence and Supervenience}
+    {Reprinted in M. A. Bedau \& P. Humphreys (Eds.). (2008). \ti{Emergence: Contemporary readings in philosophy and science} (pp. 81-98). Cambridge: MIT Press}
+
+\reference{Hempel C., Oppenheim P. 1965}{On the Idea of Emergence}
+    {Reprinted in M. A. Bedau \& P. Humphreys (Eds.). (2008). \ti{Emergence: Contemporary readings in philosophy and science} (pp. 61-68). Cambridge: MIT Press}
+
+\reference{Searle J. 1992}{Reductionism and the Irredicibility of Conciousness}
+    {Reprinted in M. A. Bedau \& P. Humphreys (Eds.). (2008). \ti{Emergence: Contemporary readings in philosophy and science} (pp. 61-68). Cambridge: MIT Press}
+
+\reference{Dennett D. C. 1991}{Real Patterns}
+    {Reprinted in M. A. Bedau \& P. Humphreys (Eds.). (2008). \ti{Emergence: Contemporary readings in philosophy and science} (pp. 189-206). Cambridge: MIT Press}
+
+\reference{Humphreys P. 1997}{How Properties Emerge}
+    {Reprinted in M. A. Bedau \& P. Humphreys (Eds.). (2008). \ti{Emergence: Contemporary readings in philosophy and science} (pp. 111-126). Cambridge: MIT Press}
+
+\end{thebibliography}
+
+%------------------------------------------------
+% Annotated Bibliography
+%------------------------------------------------
+\newpage
+\section*{Annotated Bibliography}
+
+% TODO
+\annbibtitle{Wilson J. 2018}{Metaphysical Emergence}
+
+\subsubsection*{Chapters 1 \& 2}
+\subsubsection*{Chapters 3 \& 4}
+\subsubsection*{Chapter 5}
+
+\annbibtitle{Fodor J. A. 1974}{Special Sciences}
+
+Consider and oppose two scienficially fundamental perspectives: the 'Unity of Science' and the 'Generality of Physics'. The Unity claim is actually stronger than the Generality claim; Unity of Science requires all sciences to have as their aim the construction of a physics-termed explanation of their studied phenomena, while Generality of Physics requires only that instances of studied phenomena be completely explanable in terms of phyics. The Unity claim is, in fact, the central claim of Redictive Physicalism.
+
+However, there is a seeming paradox in the Unity claim - it pronounces that the continued success of the special sciences is just more and more evidence that they ought to be disconinued; they stray further and further from an explanation in terms of physics. The \ti{special sciences} are sciences that do not deal directly or appeal to physical explanations.
+
+\ti{Reductive Physicalism} is the view that all special sciences must reduce to physics. For some special-science relationship $S_1 \rightarrow S_2$, reductivism requires there be a reduction with to physical predicates $P_1, P_2$ such that
+
+$$
+\begin{array}{rcll}
+    S_1 x & \rightarrow & S_2 x & \tx{(1)} \\
+    S_1 x & \rightleftharpoons & P_1 x & \tx{(2a)} \\
+    S_2 x & \rightleftharpoons & P_2 x & \tx{(2b)} \\
+    P_1 x & \rightarrow & P_2 x & \tx{(3)}
+\end{array}
+$$
+
+This setup forms a sort of bridge between the special-science relationship and a physical relationship. Though, there are some problems with the existence of bridges like this and how it interacts with the meaning of $\rightarrow$.
+
+A way to address the bridge problems is with \ti{Token Physicalism}, where all events that the special sciences talk about are physical events.
+\begin{enumerate}
+    \item Token physicalism is weaker than materialism, which claims token physicalism and that every event falls under the laws of some science or other.
+    \item Token physicalism is weaker than type physicalism, where every property mentioned in the laws of any science is a physical property. This in fact implies token physicalism.
+    \item Token physicalism is weaker than reductive physicalism, which claims token physicalism and that there are no natural kind predicates in an ideally completed physics which correspond ot each natural kind predicate in any ideally completed special science.
+\end{enumerate}
+
+Every science implies a taxonomy of the events in its univers eof discourse. It creates theoretically- and empirically- inspired vocabulary, which fall under the laws of the science by virtue of satisfying those predicates. Not every theoretical predicate is valid or good though.
+
+To fix reductive physicalism, can allow bridge relations to be in the form
+
+$$
+    S_x \leftrightharpoons P_1 x \lor \cdots \lor P_n x
+$$
+
+where $P_1 x \lor P_n x$ is not the kind of natural kind predicate in the reducing science. This allows for "bridge laws" to not really be laws, since they are not law-like. Reducing with this kind of bridge law looks like
+
+$$
+    P_1 x \lor \cdots \lor P_n x \leftrightharpoons P\p_1 \lor \cdots P\p_m
+$$
+
+Thesis: "There are special sciences not because of the nature of our epistemic relatin to the world, but because of the way the world is put together: not all natural kinds (not all the classes of things and events about which theree are important, coutnerfactual supporting generalizations to make) are, or correspond to, phyical natural kinds."
+"A way of stating the classical reductionism view: things which belong to different physical kinds ipso facto can have no projectible descriptions in common; that if x and y differ in those descriptions by virtue of which they fall under the propert laws of physics, they must differ in those descriptions by virtue of which they fall under any laws at all."
+"If science is to be unified, then all such taxonomies must apply to the same things. If physics is to be basic science, then each of these things had better be a phyical thing. But it is not further required that the taxonomies which the special sciences employ themselves reduce to the taxonomy of physics. It is not required, and it is probably not true."
+
+% TODO
+\annbibtitle{Bedau M. 2018}{Downward Causation and the Autonomy of Weak Emergence}
+
+% TODO
+\annbibtitle{Bedau M. 2008}{Is Weak Emergence Just in the Mind?}
+
+% TODO
+\annbibtitle{Wolfram S. 1985}{Undecidability and Intractability in Theoretical Physics}
+
+% TODO
+\annbibtitle{McLaughin B. P. 1992}{The Rise and Fall of British Emergentism}
+
+% TODO
+\annbibtitle{McLaughin B. P. 1997}{Emergence and Supervenience}
+
+% TODO
+\annbibtitle{Hempel C., Oppenheim P. 1965}{On the Idea of Emergence}
+
+% TODO
+\annbibtitle{Searle J. 1992}{Reductionism and the Irredicibility of Conciousness}
+
+% TODO
+\annbibtitle{Dennett D. C. 1991}{Real Patterns}
+
+% TODO
+\annbibtitle{Humphreys P. 1997}{How Properties Emerge}
+
+\end{document} % +===+===+===+===+===+===+===+

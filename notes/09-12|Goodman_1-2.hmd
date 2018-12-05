@@ -1,0 +1,24 @@
+# Fact, Fiction and Forecast, Goodman - Chapters 1 & 2
+
+::style style/main.css
+
+## Problems with counterfactuals:
+
+_The problem of semifactuals_. If we looks at the situation from a purely classoc-logical perspective, if a counterfactual is true then so is the same statement but with the opposite consequent, since in either one the antecedent if false.
+
+_The problem of relevant condition_. If we have a counterfactual with antecedent $A$ and consequent $C$, then there is a set $S = \lnot A$ such that $A \cdot S$ entails anything. For example, we can have a counterfactual "if had P x, then Q x", and we have a true condition "not R x", which is among the $S$ we mentioned (which means that, say "if not R x then not P x" is true but not necessarily "if not P x, then not R x"; its like I(R x) is a superset of I(P x)). Then we have as true generalizations "if not R x and if had P x, then Q x" and "if not R x and if had P x, then not Q x", since there are no so such "x" (since "if not R x, then not P x").
+
+_The problem of cotenability_. A statement $A$ is compatible but not cotenable with $B$ if they do not contradict each other, but $B$ would not be true if $A$. A statement $A$ is cotenable with $B$ if it is not the case that $B$ would not be true if $A$ were true. This is an attempt to solve the relevant condition problem, by excluding non-notenable statements from $S$.
+
+_The problem of laws_. What really counts as "law-like"? We want to include things that describe generally holding phenomenon, but sometimes things generally hold by accident, which we want to exclude from laws. If we allows 'accidental' laws, then laws would degenerate and just be an exact description of everything in the world.
+
+_Question_. Supposing A is our antecedent and C is our consequent, "if had A, then C", why can't we just say that if A were the case C would be the case if and only if C follows by law from A and some other true sentences?
+
+_Answer_. Basically, the problem of the relevant condition. You can have things that are true sentences attached to the situation that would prevent $C$ from being true.
+
+## The Passing of the Possible - Dispositions
+
+_Start Phenomenolistic_. We've got places, times, and basic sensations. Suppose that you're vision narrows so that you can't see the place, but can still see the time. Then you can connect them by summing them meriologically (a:place + t:time) to get an object that "place-time"s.
+
+Then, we can project properties onto these meriological objects. And _induction_ is projecting of these properties to other similar places and times, on the basis of _confermation theory_. So it all comes down to epistomology from there. But it all hinges on figuring out the riddle of induction.
+

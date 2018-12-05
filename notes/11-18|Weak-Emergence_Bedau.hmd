@@ -1,0 +1,49 @@
+# Downward Causal Autonomy and Weak Emergence - Mark Bedau
+
+::style style/main.css
+
+## Background
+
+In this paper, Mark explores a foundation of _derivability (only) by simulation_ for *Weak Emergence*.
+
+He starts with the core idea of what emergence should be:
+- Emergent phenomena are *dependent* (ontologically) on underlying processes.
+- Emergent phenomena are *autonomous* (causally) from underlying processes.
+
+The _base_ is the *emergent property*. Then things that happen because of emergent properties are _emergent phenomena_. Entities that have emergent properties are _emergent entities_. You see how this goes.
+
+## A New Foundation for Weak Emergence
+
+_Definition_. A property $P$ is *underivable except by simulation* if $P$ can only be derived from a system, even causally closed at the lowest-level, through a complete simulation of the low-level causes (e.g. 'gliders' in GOL). Such a property is argued to be *weakly emergent*.
+
+Basically, Bedau's idea is that if a property is interesting and complex, in that it "arises" from the low-level properties of a system in an unpredictable way, then it is indeed weakly emergent.
+
+It is important to note that Bedau is making a metaphysical point about emergent properties which is independent from epistomological concerns. Just because he haven't yet found a derivation sans simulation for a property doesn't mean that it is emergent - it just looks emergent. Of course, a proof that there is no derivation would work, but that's extremeley hard to come by (especially since the whole $P = NP$ problem isn't even solved.)
+
+## Resultant Properties
+
+Bedua distinguishes truely emergent properties from merely *resultant* properties.
+
+_Definition_. A property $P$ is a *resultant property* if it is predictable from the properties of its parts. Often times, $P$ is just of a whole in and of itself and not an interesting emergence. $P$ of the whole that merely holds because of its being a whole as defined. For example, "being a circle" is a property that applies to a collection of points, but no single point in that collection shares the property "being a circle". However, this is uninteresting and is directly predictable from the definition of a circle and the properties of points, without having to do any sort of computation to figure it out.
+
+## Game of Life
+
+In GOL, there are many good examples of properties that are underivable except by simulation. For example, the property "finitely-expanding". A worldstate that, after a finite number of time steps, reaches a maximum $m \times n$ area in the world such that no matter how many more time steps are run no cell will be born outside the area.
+
+There are examples of non-finitely-expanding, such as the famous _Gospel Glider Gun_ that creates gliders in intervals and sends them out into infinity. And there are examples of finitely-expanding, such as any that consists only of non-interacting _still lifes_.
+
+However, to derive if a worldstate is finitely-expanding, one needs to run a simulation. There is not general mathematical theorem that decides this without doing the equivelant of a brute simulation. Even if a mega-computer could do the simulation instantaneously, it would still count as needing a simulation and thus "finitely-expanding" is an emergent property.
+
+If, however, someone came up with a shortcut, it would prove that "finitely-expanding" is not emergent.
+
+## The Problem of Downward Causation
+
+Bedau points out the the main motivation against accepting emergence is, basically, Kim's overdetermination argument. If $S$ emerges from $P$ but is syncronically and ontologically dependent on $P$, then if $S$ causes a $P^*$ then surely we can say that $P$ causes $P^*$ as well. But if the low level of the $P$s is cuasally closed, then why do we need to talk about $S$ causing anything at all? It seems irrelevant and problematic in an overdeterminative sense. But if $S$ was causally inefficacious, then it loses its status of autonomy from $P$ and is not _really_ emergent in the first place.
+
+Bedau points out that Kim's concerns are ill-founded. The idea of weak emergence avoids the problems by yielding overdetermination as unproblematic, since it is causally reductionistic and uses ontologically dependence. But such weak emergence is important because it clearly defines autonomous and relevant structures.
+
+Additionally, weak emergence is not synchronic. It introduces a diachronic perspetive on causation, where for example in GOL for a macrostate to have an emergent property, many time steps need to pass. For a microstate to have a property, it must be manifested in one or two time steps. In this cause, emergence properties are causally relevant and distinct from lower-level properties.
+
+
+Last paragraph of the paper:
+> "The advent of modern philosophy is conventionally presented as the Cartesian triumph over Aristotelian scholasticism. An Aristotelian thesis that attributed nature on the basis of a ruch dependence on generating context was supplanted by the Cartesian antithesis that attributed reductionistic essences independent of context. Computer simulations allow weak emergence to extend reductionism into new territory, but they do so by embodying the idea that something's nature can depend on its genesis. Thus, the macro can depend on the context-sensative process from which it arises and by which it is maintained. In this way, weak emergence can be viewed as a new synthesis."

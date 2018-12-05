@@ -1,0 +1,25 @@
+# Grounding
+
+::style style/main.css
+
+$$
+\newcommand{\t}[1]{\text{#1}}
+$$
+
+_Text_. Rosen - _Metaphysical Dependece_.
+_Text_. Sider - _Tools of Metaphysics_.
+_Handout_. 11/20/18:I
+
+## Two Views of Grounding
+
+(*_Rosen_*) Grounding is a *predicate* and is a *property relation*; i.e. grounding is a predicate relating two properties.
+
+(*_Fine_*) Grounding is *sentencially connective*; i.e. grounding is an _operator_ of two sentence-refering expressions. E.g. $[a] \t{grounds} [b]$ where $a,b$ are sentences. E.g. $G([a], [b])$ where $G$ is the "grounding" predicate and $a,b$ are sentences. Could think "p grounds q" as "q because p".
+
+_Notation_. "$[s]$" abbreviates "the fact that $s$", where $s$ is a sentences.
+
+_Notation_. "_"$s$"_ " abbreviates "the sentence $s$".
+
+Perhaps there is a nominalist perspective that grounding is a predicate but that there is no relations. "there is the property 'red' the bard does not _have_ the property."
+
+I continue my notes on the handout.

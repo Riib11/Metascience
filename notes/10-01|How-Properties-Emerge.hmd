@@ -1,0 +1,35 @@
+# How Properties Emerge
+
+_by Paul Humphreys_
+
+Exclusion argument:
+(*1*) If event $x$ is causally sufficient for an event $y$, then there is not $x'$ distinct from $x$ that is causally relevant to $y$. (exclusion)
+(*2*) For every physical event $y$, some physical event $x$ is causally sufficient for $y$. (physical determinism)
+(*3*) For every physical event $x$ and mental event $x'$, $x$ is distinct from $x'$. (dualism)
+(*4*) Conclusion: For every physical event $y$, no metal event $x'$ is causally relevant to $y$.
+
+This is bad for dualist theories, including ones incorporating mental superveneince.
+
+However, this argument is wrong. To reformulate it correctly:
+
+Formulation of (1) is wrong, because it discludes intermediate events and such. So,
+
+_Definition_. $x$ is *causally connected* to $z$ iff $x$ causes $z$ or visa versa.
+
+(*1'*) If an event $x$ is causally sufficient for an event $y$, then no event $x'$ distinct from and causally disconnected from $x$ is causally relevant to $x$. (exclusion)
+
+Consider (2) more generally: For every $I$-level event $y$, some $I$-level event $x$ is causally sufficient for $y$. ($I$-determinism)
+
+But what about physical bio-determinism? This doesn't seem right because the first biological events would have to be causes by some lower, non-bio level. So, this more general formulation doesn't work, and we should restrict to the 0-level
+
+(*2'*) For every 0-level event $y$, some 0-level event $x$ is causally sufficient for $y$. (0-determinism)
+
+(*3'*) For every 0-level event $x$ and every $i$-level event $x'_i$, where $i > 0$, $x$ is distinct from $x'_i$. (pluralism)
+
+Then this immediately follows
+
+(*4'*) For every 0-level event $y$, no $i$-level event $x'_i$ that is causally disconnected from every 0-level event antecedent to $y$, where $i > 0$, is causally relevant to $y$.
+
+
+
+_Definition_. A property is *emergent* iff it has novel causal powers from its object's parts.

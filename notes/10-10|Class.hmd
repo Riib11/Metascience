@@ -1,0 +1,147 @@
+# "Causation" - David Lewis
+
+::style style/main.css
+
+$$
+\newcommand{\cfc}{\, \Box\kern-1.5pt \raise1pt\hbox{$\mathord{\rightarrow}$} \,}
+\newcommand{\p}{^\prime}
+$$
+
+_Note_. Outline and specifics on handout [10/10:1].
+
+## Definitions of causation
+
+### Hume
+- Causation is _an object followed by another, and where all the objects, similar to the first, are followed by objects similar to the second_.
+- Causation is _an object followed by another, and where if the first object had not been, the second never had existed_.
+- (Lewis) $e$ is caused by $c$ if there is a chain of causal dependence from $c$ to $e$, where each item in the chain is _casually dependent_ upon the preceeding item.
+
+
+## Problem of Regularity Analysis
+
+If A causes E and F, then you will also make the regularity analysis that since E and F are always seen together, you might say that E causes F or F causes E.
+
+## Counterfactual Dependence
+
+_Counterfactual dependence_ is a relation between sentences. We get
+$$
+\begin{aligned}
+    C &\cfc E \\
+    \alpha &: C, E \\
+    \text{or } \alpha : \lnot C, \lnot E &\implies w_1 : C, E \\
+\end{aligned}
+$$
+and
+$$
+\begin{aligned}
+    \lnot (C &\cfc E) \\
+    \alpha &: C, \lnot E \\
+    \text{or } \alpha : \lnot \lnot C, \lnot E &\implies w_1 : C, \lnot E \\
+\end{aligned}
+$$
+
+where $C$ is that sentence stating that $c$ occurs, $E$ is the sentence stating that $e$ occurs.
+
+## Causal Dependence
+
+_Causal dependence_ is a relation between events. For any two actual events $e$ and $c$, e casually depends on $c$ if and only if $\lnot C \cfc \lnot E$
+
+## Non-transitive Counterfactual Dependence
+
+The chain diagram on the handout translates more accurately to
+$$
+\begin{aligned}
+    \lnot D &\cfc \lnot E (1)\\
+    \lnot C &\cfc \lnot D (2)
+\end{aligned}
+$$
+
+In english:
+- $c$ causes $e$
+- $E$ counterfactually depends on $D$
+- $D$ counterfactually depends on $C$
+
+In this situation, $E$ does *not* counterfactually depend on $C$.
+
+In other words, (1) and (2) *don't* imply that
+$$
+    \lnot C \cfc \lnot E (3)
+$$
+
+This is extracted from:
+
+- (1) $(\lnot D \cfc \lnot E) \implies$ closest world $w_1 : \lnot D, \lnot E, C$.
+- (2) $(\lnot C \cfc \lnot D) \implies$ closest world $w_2 : \lnot C, \lnot D, E$.
+- (3) $(\lnot C \cfc \lnot E) \implies$ closest world $w_3 : \lnot C, \lnot E$.
+
+### Example: Big Bang
+
+$$
+\begin{array}{r|rl}
+    (1)
+        & \lnot D \cfc \lnot E & \rightarrow
+        w_1 : \lnot D, \lnot E \\
+    (2)
+        & \lnot C \cfc \lnot D & \rightarrow
+        w_2 : \lnot C, \lnot C, \lnot E \\
+    \hline
+    (3)
+        & \lnot C \cfc \lnot E & \rightarrow
+        w_2
+\end{array}
+$$
+
+So in this case $E$, a person's existence, does counterfactually depend on $C$, the big bang.
+
+## Preemption
+
+Suppose we have the assasin situation. Assassin 1 is aiming to shoot the target. Behind them is Assassin 2, whom's job is to shoot the target if A1 fails to. So, the target getting shot is not counterfactually dependent upon A1 shooting.
+
+### Early Preemption
+
+But if A2 decides to walk away, then the target getting shot does now in fact counterfactually depend on A1 shooting. You don't get to *backtrack* and make A2 not walk away. This is early preemption
+
+### Late Preemption
+
+A man eats a large dinner, and then later eats poison. The poison takes longer to take effect because of the dinner. So does the kind of their death cause them to have the dinner? But not eating the dinner would not prevent their death, but _change_ their death.
+
+## New Lewis on Causation
+
+### Trumping Preemption
+
+#### Example
+Morgana and Merlin both cast a spell on a frog. The laws are that the first person to cast a spell at midnight at time $x$ will have their spell carried out at time $x+24\text{hr}$. If Morgana casts the spell $S$ and then Merlin casts the spell $S\p$ 1hr afterwards. Then Morgana's spell will trump Merlins. But if $S = S\p$, then it would look the same even if Morgana did not cast her spell.
+
+This is a problem for Lewis's original theory, because there are no intermediary events or other tricks that Lewis appeals to.
+
+#### Example
+A major and a sargent both yell command $C$ and $C\p$ to their troops. The rule for the troops is that they listen to the highest-ranking officer. But if $C = C\p$, then there's the same problem as the previous example. There's no counterfactual dependence on the major's command, and no chain of events to appeal to.
+
+### Lewis's Response
+
+What really makes the higher-ranking cause the actual cause is that *alterations* in the higher-ranking cause would change the effect. These alterations yield a range of possibilities, rather than just $C, \lnot C$. So, there are a lot of counterfactual conditionals to evaluate. This total is a relation of *influence*.
+
+This idea of _influence_ gets even fuzzier than counterfactuals, so this new theory is degree-theoretic.
+
+_Note_. The point of a firing squad is to make it so each participant can say "well, if i hadn't shot, he still would have died, so i didnt kill him". This is *Torte's Law*.
+
+*Definition*. If the firefighters influence the fire by lessening it, then they _caused_ the fire. But *Fragility* is how strictly you define the fire. In this example, fragility would appeal to saying the the lessened fire is a different fire, so the firefighters didn't cause the _original_ fire, because that's a different fire.
+
+## Past Counterfactuals
+
+There's a button that, if pressed, would cause a nuclear holocaust. Assume that there is never a nuclear holocaust. Then the button counterfactual is most likely true, because for any world where the button is pressed, there's a closer world where the button fails than there is a nuclear holocaust (everything in the present would have to be different).
+
+This is a problem for Lewis's theory. Do we have to ignore the time since the time of the counterfactual? But Lewis wants to allow backwards causation because we wants to allow time travel.
+
+If we have determinism, then there's a problem as well. Because then the counterfactual assumes a small miracle. And then afterward no more miracles are allowed.
+
+### Lewis's analysis:
+
+- First importance is to not to break lots of laws (large miracles).
+- Second importance is to avoid large local violations (medium miracles)
+- Third importance is to avoid small local violations (small miracles)
+- Fourth importance is to void changes that are in accordance with the law (changes in matter of fact)
+
+_Reference_. Adam Elga
+
+ 

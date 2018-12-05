@@ -1,0 +1,32 @@
+# FF&F, Goodman - Chapter 3
+
+::style style/main.css
+
+## The Old Problem of Induction
+
+- Why is induction justified?
+- Why should the future have anything to do with the present?
+
+Goodman rejects this sense of induction because it is just requiring some sort of metaphysical pre-vision. He thinks that this is not helpful - we cannot know what is not yet known. Basically, you _dont have inductive knowledge_. There is no non-circular 
+
+As for trying to fit in probability, it isn't really knowledge. The old problem is about getting unattainable knowledge. This cannot really be what the problem of induction should be
+
+*Conclusion*. You _can't_ justify induction in any terms other than itself.
+
+## The New Riddle of Induction
+
+Have rules for drawing inferences, and change those over time.
+
+The new riddle is to explain how we actually use induction. _In which ways will the future resember the past_?
+
+### The Grue Paradox
+
+*Definition*. A thing is *grue* if and only if it is first observed before time $t$ to be green or after time $t$ as blue.
+
+*Definition*. A thing is *bleen* if and only if it is first observed before time $t$ to be blue or after time $t$ as green.
+
+These predicates are weird and aren't useful for accurate predictions. But what's so strange about them? Can define "green" and "blue" in terms of them, but "green" and "blue" aren't treated strangely.
+
+_Note_. We have to decide what we want to count as a _change_ and _not a change_. 
+
+_Looking forward_. In looking at the concept of _entrenchment_, Goodman  resolves the problem of _grue_ by declaring is not-enchrenched. This is in fact true, but is not really a satisfying answer to our inquiry into the problem with grue. _Epistemically_, what's the problem with grue? He just explains how we do not use grue.

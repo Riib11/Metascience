@@ -1,0 +1,29 @@
+# Real Patterns - Daniel Dennett
+
+::style style/main.css
+
+## Introduction
+
+Dennett starts off with the question "are beliefs real?" Consider is it correct to _believe_ in centers of gravity? Why or why not? Dennett gives examples of people that argue these kinds of beliefs are obviously unreal and others that argue they are obviously real (such as Dretske).
+
+But consider completely arbitrary "centers", such as the center of population or the "center of Dennett's lost socks". Are thse just as real? Does is just have to do with usefulness or interest to decide how 'real' a pattern is?
+
+So a question is, then, should we treat mental states (such as belief) as _real_ in the same way and to the same degree as other patterns, such as electrons?
+
+## Reality of Pattens
+
+Dennett gives the memorable *bar code* example. Its clear that the underlying Bar Code pattern is there for all of the cases, except for $E$ and $F$ where it starts to get iffy. In fact, in $F$, it is technically indistinguishable from random noise, from strictly an after-the-fact perspective (without looking at the generating code). 
+
+Dennett refer's to Chaitin's idea of "incompressibility", in that patterns are recognizable because they are compressible while noise is incompressibile.
+
+But compressibility comes with two degrees of freedom:
+- accuracy
+- simplicity
+
+Usually, it is a trade-off from one to the other. Dennett argues that it is a design choice for which is more important in which circumstance, and that it isn't an inherent metaphysical fact about the reality of patterns themselves.
+
+Dennett makes good use of the *Game of Life* examples. 
+
+Final point:
+
+> "File tuning could of course reduce these probabilities [of modelling which method was used to create a bar code pattern], but that is not my point. My point is that _even if_ the evidence is substantial that the discernible pattern is produced by one process rather than another, it can be rational to ignore these differences and use the simplest pattern description (e.g. _bar code_) as one's way of oranizing the data..."

@@ -1,0 +1,93 @@
+# 09-12 Class
+
+::style style/main.css
+
+## Problems with Counterfactuals
+
+Conditionals don't mean that there is a connection between the antecedent and the consequent. But in counterfactuals, there is such an implication.
+
+_Note_. Counterfactuals are all over the place in science, so we should try to exlain them or exlain them away.
+
+_Goal_. Explain counterfactuals non-circularly.
+_Goal_. Analyze law of nature.
+
+$$
+    A x
+    \text{ }\Box\kern-1.5pt\raise1pt\hbox{$\mathord{\rightarrow}$}\text{ }
+    C x \\
+    \text{with } \textbf{N }( (Ax \land S x) \implies Cx )
+$$
+
+where $\textbf{N}$ means "nomically necessary"
+
+Possible relevant conditions to exclude from $S$:
+
+*1*. Exclude all facts that are incompatible with $A$. _Problem_: there are non-cotenable but compatible facts. For example, there could be a law about $x$ (in $S x$) that prevents the satisfaction of $A x$.
+
+$$
+    \textbf{N }( \lnot(A \land S) )\\
+    \textbf{N }( \lnot((A \land S) \land C) )
+$$
+
+*2*. Exclude all laws that are empty (have no positive instances). _Problem_: can just make a law non-empty by irrelevant disjunction.
+
+*3*. Exclude all statements that are nominologically incompatible with $A$. _Problem_: suppose $A = Q \lor R$. Then $A$ is cotenable with $Q$ and, seperately, cotenable with $R$. Then, we get the two true counterfactuals below; but of course, these can't both be true.
+
+$$
+(A x \text{ }\Box\kern-1.5pt\raise1pt\hbox{$\mathord{\rightarrow}$}\text{ } Q x),
+(A x \text{ }\Box\kern-1.5pt\raise1pt\hbox{$\mathord{\rightarrow}$}\text{ } R x)
+$$
+
+*4*. Exclude all statements that are not compatible with both of $C, \lnot C$. But, we get the same problem of nominological incompatibility with $A$. And, can't hold fixed the facts that would be the case if $\lnot A$. Must pick conditions in $S$ that are nominological, logically, and counterfactually compatible with $A$.
+
+*5*. Exclude non-cotenables. But cotenable requires reference to counterfactual conditions, so then we have an infinite regress of evaluation.
+
+## Problems with Laws
+
+Goodman thinks that laws can _not_ be stable under counterfactual conditions. For example if "all coins in my pocket are silver" as a law, $L$, doesn't sustain the counterfactual "if I also have a penny, then $L$"
+
+So the goal of defining laws well is to exclude these sorts of situations. Consider
+
+Features of laws:
+- Universal generalizations
+- Support counterfactuals (can be held in counterfactual conditions)
+- Confirmed by a limited sample of all-positive instances
+- Can make predictions with (in the future)
+
+Goodman's list of unclear things:
+- Angle's and Devils
+- Classes
+- Dispositions
+- Counterfactual assertions
+- Entities/Experiences that are possible but not actual
+- Nuetrinos
+
+If you find these things clear already, Goodman has nothing more to offer you. He finds these unclear likely because he is sympathetic to empirical positivism
+
+Leibniz's list of unclear things:
+- Everything
+
+Leibniz wants to use _God_ as an explanation. And God is bound to reason. So only explanations that are logical derivations from a priori truths are valid.
+
+Hume's list of unclear things:
+- almost nothing
+
+Nothing needs explanation, everything just is. Everything is just a brute fact. A good explanation is just a summary.
+
+Hume and Leibniz (and Spinoza) represent sort of poles to the _explanation_ question, but people don't really take these extreme opinions anymore.
+
+What counts as a good explanation of counterfactuals? What counts as a good explanation of anything? Should your sense of a good explanation have a good explanation for your taking it, or should it be axiomatic?
+
+Does an explanation have to be based upon or conform to the common usage of counterfactuals? Or should the theory be allowed to make certain deviances from the general reasoning, to yield a better theory?
+
+Well, rather than beating our heads againt the same wall for centuries, lets try something else. How about looking at dispositions? They might be simpler ya know.
+
+Dispositions only talk about a thing, and not any special conditions that must or mustn't be in in order to have the disposition. It just talks about the propensity of a thing to behave a certain way.
+
+Disposiitons are in contrast to manifest properties. So, "strechy" is a disposition wheres "streched" is a manifest property. Or in general, $(\Phi\text{-able})x$ is a disposition of $x$, whereas $\Phi x$ is a manifest property. More specifically, you could think of $\Phi x$ being the manifestation of the disposition $x$ to be $\Phi$.
+
+But what if $\Phi$ is itself a disposition? Then the manifestation of the disposition to $\Phi$ is having the disposition that $\Phi$ is.
+
+But are dispositions just tied directly to counterfactuals?
+
+Manifest properties are what happens in an event. An event are the things that actually happen.

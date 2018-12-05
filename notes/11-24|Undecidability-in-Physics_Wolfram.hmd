@@ -1,0 +1,17 @@
+# Undecidability and Untracribility in Theoretical Physics - Stephen Wolfram
+
+::style style/main.css
+
+## Introduction
+
+Wolfram is focussed on theoretical physics and an analogy to computation. In theoretical physics, there are laws and mathematical relations that describe and predict physical phenomena. It is a matter of computing the application of these to some inputs to get the description and predictions of a physical system. Wolfram notes that sometimes there is no shortcut (of special generalized laws) for describing a system than going through a total simulation using calculations of all the low-level laws:
+
+> But the computer is itself an examle of a physical system. And it can determine the outcome of its own evolutional irreducibility occurs whenever a physical system can act as a computer. The behavior of the system can be found only by direct simulation or observation: No general predictive prodedure is *possible*. Computational irreducibility is common among the systems investigated in mathematics and computational theory. This paper suggests it is also common in theoretical physics.
+
+(from first page)
+
+Then Wolfram talks about _P_, _NP_, and _PSPACE_. It is widely conjectured that _P_ $\subsetneq$ _PSPACE_ and _P_ $\subsetneq$ _NP_. Cellular automata are clear examples of when these concepts are useful. To determine if an arbitrary automata ever "dies out", the only possible method is simulation. And this simulation has no upper bound on time, so the original question is formally undecidable.
+
+Note that if the CA (Cellular automata) is confined to a total number of sites $N$ (rather than being allowed to expand), then the original question can be answered in $k^N$ steps for some $k > 0$. But CA that are universal computers obviously will not have this property.
+
+> This chapter has suggested that many physical systems are computationally irredicable so that their own evolution is effectively the most efficient procedure for determining their future. As a consequence, many questions about these systems can be answered only by very lengthy or potentially infinite computations. But some questions answerable by simpler computations may still be forumulated.

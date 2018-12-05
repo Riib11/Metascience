@@ -1,0 +1,64 @@
+# Special Sciences - J. A. Fodor
+
+::style style/main.css
+
+## The Unity of Science
+
+There are two concepts: 'Unity of Science' and 'Generality of Physics'. The Unity claim is actually stronger than the Generality claim - Unity would require all scienes to aim to be explained in physics (the claim is that of reductivism), whereas the Generality claim only requires instances of phenomenon to be directed completely by physics.
+
+The paradox of the Unity claim comes to this: the more successful the special sciences are, the more they ought to disappear.
+
+_Definition_. *Reductivism* is the view that all special sciences must reduce to physics (or whatever is the lowest-level science). For some special-science relationship $S_1 \rightarrow S_2$, reductivism requires there be a reduction with $P_1, P_2$ such that
+
+$$
+\begin{array}{lrcl}
+    \text{(1)} & S_1 x & \rightarrow & S_2 x \\
+    \text{(2a)} & S_1 x & \leftrightarrow & P_1 x \\
+    \text{(2b)} & S_2 x & \leftrightarrow & P_2 x \\
+    \text{(3)} & P_1 x & \rightarrow & P_2 x
+\end{array}
+$$
+
+This utilizes a sort of *bridge* between the special-science and the physical. There are some problems with the existence of bridge and how it affects the meaning of $\rightarrow$.
+
+## Addressing the Bridge Problems
+
+_Definition_. *Token physicalism* is where all the events that the special sciences talk about are _physical_ events.
+
+- Token physicalism is weaker that *materialism*: token physicalism and every event falls under the law sof some science or other.
+
+- This is weaker that *type physicalism*: every property does mentioned in the laws of any science is a physical property. (implies token physicalism)
+
+- Token physicalism is weaker that *reductivism*: token physicalism and there are no natural kind predicates in an ideally completed physics which correspond to each natural kind predicate in any ideally completed special science
+
+## Scientific Taxonomy
+
+Every science implies a taxonomy of the events in its universe of discourse. It creates vocabularly based theoretically and empirically, which fall under the laws of the science by virtue of satisfying those predicates. Not every theoretical or empirical predicate is valid or good though.
+
+*Example*. Gresham's law is a law about monetary exchanges.
+
+> But what is interesting about monetary exchanges is surely not their commonalities under _physical_ description. A natural kind of monetary exchange _could_ turn out to be co-extensive with a physical natural kind; but if it did, that would be an accident on a cosmic scale.
+
+## Checkpoint
+
+Argument so far: psychological reductivism cannot be inferred from token physicalism. they are not the same
+
+## Fixing Reductivism
+
+Suppose that we allow the bridge statements from before to be of the form
+
+$$
+    S_x \leftrightarrow P_1 x \lor \cdots \lor P_n x
+$$
+
+where $P_1 x \lor \cdots \lor P_n x$ is _not_ the kind of natural kind predicate in the reducing science. This allows for "bridge laws" to not really be laws, since they are not _law-like_. Instead, there is a huge variety of low-level predicate for each high-level predicate, and when doing the bridge you aptly get something like $P_1 x \lor \cdots \lor P_n x \leftrightarrow P_1^\prime \lor \cdots \lor P_n^\prime$
+
+physics is assumed to be a bedrock science becase exceptions to its generalizations (if any) should be only random. there shouldn’t be any science ‘further down’ to go in explaining the machanism whereby exceptions occur
+
+## Thesis
+
+> There are special sciences not because of the nature of our epistemic relatin to the world, but because of the way the world is put together: not all natural kinds (not all the classes of things and events about which theree are important, coutnerfactual supporting generalizations to make) are, or correspond to, phyical natural kinds.
+
+> A way of stating the classical reductionism view: things which belong to different physical kinds ipso facto can have no projectible descriptions in common; that if x and y differ in those descriptions by virtue of which they fall under the propert laws of physics, they must differ in those descriptions by virtue of which they fall under any laws at all.
+
+> If science is to be unified, then all such taxonomies must apply to the same things. If physics is to be basic science, then each of these things had better be a phyical thing. But it is not further required that the taxonomies which the special sciences employ themselves reduce to the taxonomy of physics. It is not required, and it is probably not true.
