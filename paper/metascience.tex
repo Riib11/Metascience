@@ -138,11 +138,11 @@ $$
 This setup forms a sort of bridge between the special-science relationship and a physical relationship. Though, there are some problems with the existence of bridges like this and how it interacts with the meaning of $\rightarrow$.
 
 A way to address the bridge problems is with \ti{Token Physicalism}, where all events that the special sciences talk about are physical events.
-\begin{enumerate}
+\begin{itemize}
     \item Token physicalism is weaker than materialism, which claims token physicalism and that every event falls under the laws of some science or other.
     \item Token physicalism is weaker than type physicalism, where every property mentioned in the laws of any science is a physical property. This in fact implies token physicalism.
     \item Token physicalism is weaker than reductive physicalism, which claims token physicalism and that there are no natural kind predicates in an ideally completed physics which correspond ot each natural kind predicate in any ideally completed special science.
-\end{enumerate}
+\end{itemize}
 
 Every science implies a taxonomy of the events in its univers eof discourse. It creates theoretically- and empirically- inspired vocabulary, which fall under the laws of the science by virtue of satisfying those predicates. Not every theoretical predicate is valid or good though.
 
@@ -168,7 +168,6 @@ A way of stating the classical reductionism view: things which belong to differe
 If science is to be unified, then all such taxonomies must apply to the same things. If physics is to be basic science, then each of these things had better be a physical thing. But it is not further required that the taxonomies which the special sciences employ themselves reduce to the taxonomy of physics. It is not required, and it is probably not true.
 \end{quote}
 
-% TODO
 \annbibtitle{Bedau M. 2018}{Downward Causation and the Autonomy of Weak Emergence}
 
 In this paper, Bedau explores a foundation of Weak emergence as \ti{derivability only by simulation} (or \ti{underivable except by simulation}).
@@ -221,13 +220,23 @@ The advent of modern philosophy is conventionally presented as the Cartesian tri
 % TODO
 \annbibtitle{McLaughin B. P. 1997}{Emergence and Supervenience}
 
-% TODO
 \annbibtitle{Hempel C., Oppenheim P. 1965}{On the Idea of Emergence}
+
+The key observation is that people attribute to emergence much more than they should. For example, emergent phenomenon are commonly thought of as
+
+\begin{itemize}
+    \item unpredictable
+    \item mysterious
+    \item a manifestation of newness
+\end{itemize}
+
+But, upon close analysis, this paper concludes that these intuitions about emergence would leave emergence as an empty concept - nothing could possibly satisfy it. Even the classic examples of emergent phenomenon, like the wetness of water, are still predictable given the properties of their parts.
+
+Rather than thinking of emergence as an ontological even, think of it as merely epistemic. Consider psychology. Our brain is made of chemicals and we do study the chemistry involved in the processes of psychology, but we do not have an explanation of high-level psychological concepts in terms of the low-level chemistry (or physics, for that matter). So, the psychological phenomena are emergent from the chemistry, but they are not metaphysically new or unpredictable. We just, with our present theories and understanding, have not explained the high level in terms of the low level. So, as an epistemic condition, psychological properties are emergent. But when we do figure such an explanation, psychology will no longer be emergent.
 
 % TODO
 \annbibtitle{Searle J. 1992}{Reductionism and the Intractability of Consciousness}
 
-% TODO
 \annbibtitle{Dennett D. C. 1991}{Real Patterns}
 
 Consider the question ``are beliefs real?'' Is it correct to \ti{believe} in centers of gravity? Why or why not? There are examples of people that argue these kinds of beliefs are obviously unreal and others that argue that they are obviously real (e.g. Dretske).
@@ -245,7 +254,39 @@ A final thought:
 Fine tuning could of course reduce these probabilities (of modeling which method was used to create a bar code pattern), but that is not my point. My point is that even if the evidence is substantial that the discernible pattern is produced by one process rather than another, it can be rational to ignore these differences and use the simplest pattern description (e.g. bar code) as one's way of organizing the data \dots
 \end{quote}
 
-% TODO
 \annbibtitle{Humphreys P. 1997}{How Properties Emerge}
+
+The exclusion argument:
+
+\begin{enumerate}
+    \item If every event $x$ is causally sufficient for every other event $y$, then there is not $x\p$ distinct from $x$ that is causally relevant to $y$. (exclusion)
+    \item For every physical event $y$, some physical event $x$ is casually sufficient for $y$. (physical determinism)
+    \item For every physical event $x$ and mental event $x\p$, $x$ is distinct from $x\p$. (dualism)
+    \item For every physical event $y$, no mental event $x\p$ is causally relevant to $y$. (conclusion)
+\end{enumerate}
+
+This is bad for dualist theories, including ones incorporating supervenience. However, this argument is invalid.
+
+Say that $x$ is \ti{causally connected} to $z$ if and only if $x$ causes $z$ or visa versa. Then a fixed formulation of the same idea is:
+
+\begin{enumerate}
+    \item[$1\p$] If an event $x$ is causally sufficient for an event $y$, then no event $x\p$ distinct from and causally disconnected from $x$ is causally relevant to $y$. (exclusion)
+    \item[$2\p$] For every $I$-level event $y$, some $I$-level event $x$ is causally sufficient for $y$. ($I$-determinism)
+\end{enumerate}
+
+But what about physical bio-determinism? It doesn't seem right because the first biological events must have been caused from some events from a non-biological level. So, this more general formulation $2\p$ doesn't work, and we should restrict to the 0-level.
+
+\begin{enumerate}
+    \item[$2\p$] For every 0-level event $y$, some 0-level event $x$ is causally sufficient for $y$. (0-determinism)
+    \item[$3\p$] For every 0-level event $x$ and every $i$-level event $x\p_i$, where $i > 0$, $x$ is distinct from $x\p_i$. (pluralism)
+\end{enumerate}
+
+The it immediately follows that we can write
+
+\begin{enumerate}
+    \item[$\p$] For every 0-level event $y$, no $i$-level event $x\p_i$ that is causally disconnected from every 0-level event antecedent to $y$, where $i > 0$, is causally relevant to $y$. (new conclusion)
+\end{enumerate}
+
+From this line of revised argumentation, we can pose a new definition of ``emergent property'': A property is emergent if and only if it has novel causal powers from its object's parts.
 
 \end{document} % +===+===+===+===+===+===+===+
