@@ -7,12 +7,15 @@
 \usepackage{amssymb}
 \usepackage{geometry}
 \usepackage{graphicx}
-% citation hyperlinks
-\usepackage[colorlinks,allcolors=red]{hyperref}
+\usepackage{etoolbox} % block quotes
+\usepackage{setspace} % linespacing
+\usepackage[colorlinks,allcolors=red]{hyperref} % citation hyperlinks
 
 %------------------------------------------------
 % Settings
 %------------------------------------------------
+\onehalfspacing
+\AtBeginEnvironment{quote}{\singlespacing\small}
 
 %------------------------------------------------
 % Commands
@@ -117,7 +120,7 @@ A thought that a previous philosopher wrote about (\cite{Wilson J. 2018}).
 
 \annbibtitle{Fodor J. A. 1974}{Special Sciences}
 
-Consider and oppose two scienficially fundamental perspectives: the 'Unity of Science' and the 'Generality of Physics'. The Unity claim is actually stronger than the Generality claim; Unity of Science requires all sciences to have as their aim the construction of a physics-termed explanation of their studied phenomena, while Generality of Physics requires only that instances of studied phenomena be completely explanable in terms of phyics. The Unity claim is, in fact, the central claim of Redictive Physicalism.
+Consider and contrast two scienficially fundamental perspectives: the \ti{Unity of Science} and the \ti{Generality of Physics}. The Unity claim is actually stronger than the Generality claim; Unity of Science requires all sciences to have as their aim the construction of a physics-termed explanation of their studied phenomena, while Generality of Physics requires only that instances of studied phenomena be completely explanable in terms of phyics. The Unity claim is, in fact, the central claim of Redictive Physicalism.
 
 However, there is a seeming paradox in the Unity claim - it pronounces that the continued success of the special sciences is just more and more evidence that they ought to be disconinued; they stray further and further from an explanation in terms of physics. The \ti{special sciences} are sciences that do not deal directly or appeal to physical explanations.
 
@@ -149,18 +152,47 @@ $$
     S_x \leftrightharpoons P_1 x \lor \cdots \lor P_n x
 $$
 
-where $P_1 x \lor P_n x$ is not the kind of natural kind predicate in the reducing science. This allows for "bridge laws" to not really be laws, since they are not law-like. Reducing with this kind of bridge law looks like
+where $P_1 x \lor P_n x$ is not the kind of natural kind predicate in the reducing science. This allows for ``bridge laws'' to not really be laws, since they are not law-like. Reducing with this kind of bridge law looks like
 
 $$
     P_1 x \lor \cdots \lor P_n x \leftrightharpoons P\p_1 \lor \cdots P\p_m
 $$
 
-Thesis: "There are special sciences not because of the nature of our epistemic relatin to the world, but because of the way the world is put together: not all natural kinds (not all the classes of things and events about which theree are important, coutnerfactual supporting generalizations to make) are, or correspond to, phyical natural kinds."
-"A way of stating the classical reductionism view: things which belong to different physical kinds ipso facto can have no projectible descriptions in common; that if x and y differ in those descriptions by virtue of which they fall under the propert laws of physics, they must differ in those descriptions by virtue of which they fall under any laws at all."
-"If science is to be unified, then all such taxonomies must apply to the same things. If physics is to be basic science, then each of these things had better be a phyical thing. But it is not further required that the taxonomies which the special sciences employ themselves reduce to the taxonomy of physics. It is not required, and it is probably not true."
+Thesis:
+
+\begin{quote}
+There are special sciences not because of the nature of our epistemic relatin to the world, but because of the way the world is put together: not all natural kinds (not all the classes of things and events about which theree are important, coutnerfactual supporting generalizations to make) are, or correspond to, phyical natural kinds.
+
+A way of stating the classical reductionism view: things which belong to different physical kinds ipso facto can have no projectible descriptions in common; that if x and y differ in those descriptions by virtue of which they fall under the propert laws of physics, they must differ in those descriptions by virtue of which they fall under any laws at all.
+
+If science is to be unified, then all such taxonomies must apply to the same things. If physics is to be basic science, then each of these things had better be a phyical thing. But it is not further required that the taxonomies which the special sciences employ themselves reduce to the taxonomy of physics. It is not required, and it is probably not true.
+\end{quote}
 
 % TODO
 \annbibtitle{Bedau M. 2018}{Downward Causation and the Autonomy of Weak Emergence}
+
+In this paper, Bedau explores a foundation of Weak emergence as \ti{derivability only by simulation} (or \ti{underivable except by simulation}).
+
+The core precepts for the concept of emergence are:
+\begin{enumerate}
+    \item Emergent phenomena are dependent (ontologically) on underlying processes.
+    \item Emergent phenomena are autonomous (causally) from underlying processes.
+\end{enumerate}
+
+All concepts of emergent base on the concept of the emergence property. The outspringing concepts include emergent entities (which are entities with emergent properties), emergent powers (which are powers bestowed by emergent properties), etc.
+
+A property $P$ is underivable except by simulation if and only if $P$ can only be derived from a system, even a system causally closed at the lowest level, through a complete simulation of the low-level causes (e.g. \ti{gliders} in the Game of Life). Bedau poses that $P$ is Weakly emergent.
+
+Basically, the idea is the if a property is interesting and complex in a formal way, in that it unpredictable arises from the low-level properties of a system, then it is indeed emergent (and, specifically, Weakly emergent).
+
+It is important to note that this is a metaphysical point about emergent properties which is independent from epistomological concerns. For example, just because we haven't yet found a derivation sans simulation for a property doesn't mean that it is emergent - it just \ti{looks} emergent. Of course, a proof that there is not derivation is good, but such proofs are extremeley hard to come by (especially because of the open $P =^? NP$ problem.)
+
+Truely emergent properties are distinct from another kind of property that arises in similar cicumstances - so-called \ti{resultant properties}. A property $P$ is a resultant property if and only if it is predictable from the properties of its parts. Often times, $P$ is just of a whole in and of itself and not an interesting emergence. $P$ of the whole that merely holds because of its being a whole as defined. For example, ``being a circle'' is a property that applies to a collection of points, but no single point in that collection shares the property of ``being a circle''. However, this is uninteresting and is directly predictable from the definition of a circle and the properties of points, without having to do any sort of scaling computation to figure it out.
+
+
+In the \ti{Game of Life}, there are many good examples of properties that are underivable except by simulation. For example, the property ``finitely-expanding''. A worldstate that, after a finite number of time steps, reaches a maximum $m \times n$ area in the world such that no matter how many more time steps are run no cell will be born outside the area.
+
+There are examples of non-finitely-expanding configurations, such as the famous \ti{Gospel Glider Gun} that creates gliders in intervals and sends them out into infinity. And there are examples of finitely-expanding configurations, such as any that consists of only non-interacting \ti{still-lifes}.
 
 % TODO
 \annbibtitle{Bedau M. 2008}{Is Weak Emergence Just in the Mind?}
@@ -182,6 +214,21 @@ Thesis: "There are special sciences not because of the nature of our epistemic r
 
 % TODO
 \annbibtitle{Dennett D. C. 1991}{Real Patterns}
+
+Consider the question ``are beliefs real?'' Is it correct to \ti{believe} in centers of gravity? Why or why not? There are examples of people that argue these kinds of beliefs are obviously unreal and others that argue that they are obviously real (e.g. Dretske).
+
+What about the case of a completely arbitrary $x$-center, such as the center of Dennett's lost socks. Are such concepts and beliefs about just as real as with other, more ``legitimate'' $x$-centers? Or does deciding the reality of concepts and beliefs about just to do with usefulness or interestingness?
+
+A question that naturally arises is ``should we treat mental states/patterns (e.g. belief) as \ti{real} in the same way and to the same degree as other patterns, such as electrons?''
+
+Dennet givese the canonical \ti{Bar Code} example. It is unclear that the underlying Bar Code pattern is there for all of the cases, except for $E$ and $F$ where it starts to get iffy. In fact, in $F$, it is technically indistinguishable from random noise, from strictly a retreospective perspective (without looking at the generating code).
+
+Dennett refers to Chaitin's idea of \ti{incompressibility}, in that patterns are recognizable because they are compressible while noise is incompressible. But compressibility comeswith two degrees of freedom: accuracy and simplicty. Usually, it is a trade-off from one to the other. It is merely a design choice for which is more important in which circumstance, and that it isn't an inherent metaphyiscal fact about the reality of the concerned patterns themselves. There are also good examples of this trade-off in the \ti{Game of Life}.
+
+A final thought:
+\begin{quote}
+Fine tuning could of course reduce these probabilities (of modelling which method was used to create a bar code pattern), but that is not my point. My point is that even if the evidence is substantial that the discernible pattern is produced by one process rather than another, it can be rational to ignore these differences and use the simplest pattern description (e.g. bar code) as one's way of oranizing the data \dots
+\end{quote}
 
 % TODO
 \annbibtitle{Humphreys P. 1997}{How Properties Emerge}
