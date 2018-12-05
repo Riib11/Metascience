@@ -9,7 +9,9 @@
 \usepackage{graphicx}
 \usepackage{etoolbox} % block quotes
 \usepackage{setspace} % linespacing
-\usepackage[colorlinks,allcolors=red]{hyperref} % citation hyperlinks
+\usepackage{xcolor}
+\definecolor{linkcolor}{rgb}{0.0, 0.7, 0.5}
+\usepackage[colorlinks, allcolors=linkcolor]{hyperref} % citation hyperlinks
 
 %------------------------------------------------
 % Settings
@@ -22,6 +24,7 @@
 %------------------------------------------------
 \newcommand{\tx}[1]{\text{#1}}
 \newcommand{\ti}[1]{\textit{#1}}
+\newcommand{\tb}[1]{\textbf{#1}}
 \newcommand{\p}{^\prime}
 
 % citations
@@ -111,13 +114,16 @@ A thought that a previous philosopher wrote about (\cite{Wilson J. 2018}).
 \newpage
 \section*{Annotated Bibliography}
 
+%------------------------------------------------
+%------------------------------------------------
 % TODO
 \annbibtitle{Wilson J. 2018}{Metaphysical Emergence}
-
 \subsubsection*{Chapters 1 \& 2}
 \subsubsection*{Chapters 3 \& 4}
 \subsubsection*{Chapter 5}
 
+%------------------------------------------------
+%------------------------------------------------
 \annbibtitle{Fodor J. A. 1974}{Special Sciences}
 
 Consider and contrast two scientifically fundamental perspectives: the \ti{Unity of Science} and the \ti{Generality of Physics}. The Unity claim is actually stronger than the Generality claim; Unity of Science requires all sciences to have as their aim the construction of a physics-termed explanation of their studied phenomena, while Generality of Physics requires only that instances of studied phenomena be completely explainable in terms of physics. The Unity claim is, in fact, the central claim of Redictive Physicalism.
@@ -168,6 +174,8 @@ A way of stating the classical reductionism view: things which belong to differe
 If science is to be unified, then all such taxonomies must apply to the same things. If physics is to be basic science, then each of these things had better be a physical thing. But it is not further required that the taxonomies which the special sciences employ themselves reduce to the taxonomy of physics. It is not required, and it is probably not true.
 \end{quote}
 
+%------------------------------------------------
+%------------------------------------------------
 \annbibtitle{Bedau M. 2018}{Downward Causation and the Autonomy of Weak Emergence}
 
 In this paper, Bedau explores a foundation of Weak emergence as \ti{derivability only by simulation} (or \ti{underivable except by simulation}).
@@ -208,18 +216,96 @@ Conclusion:
 The advent of modern philosophy is conventionally presented as the Cartesian triumph over Aristotelian scholasticism. An Aristotelian thesis that attributed nature on the basis of a rich dependence on generating context was supplanted by the Cartesian antithesis that attributed reductionistic essences independent of context. Computer simulations allow weak emergence to extend reductionism into new territory, but they do so by embodying the idea that something's nature can depend on its genesis. Thus, the macro can depend on the context-sensitive process from which it arises and by which it is maintained. In this way, weak emergence can be viewed as a new synthesis.
 \end{quote}
 
-% TODO
+%------------------------------------------------
+%------------------------------------------------
 \annbibtitle{Bedau M. 2008}{Is Weak Emergence Just in the Mind?}
 
+The goal is to present a basis for Weak emergence in terms of \ti{explanatory incompressibility}. Then, once this is established, Bedau will defend the metaphysical nature of Weak emergence by critically appealing to its \ti{dynamical} nature.
+
+In this paper, Bedau shifts from ``underivability without simulation'' to ``unexplainability without simulation'', and talk of macro-states that have incompressible explanations rather than incompressible derivations. This will be important for defending Weak emergence's metaphysical legitimacy.
+
+The definition of Weak emergence is: if $P$ is a macro-property of some system $S$, then $P$ is Weakly emergent if and only if $P$ is \ti{generatively explainable} from all $S$'s prior micro-facts but only in an incompressible way. This definition defines Weakly emergent macro-phenomena by the distinctive way in which we explain how they are generated from underlying micro-states.
+
+A \ti{generative explanation} of a macro-state is one that exactly and correctly explains how macro-events unfold over time - how they are generated dynamically. This assumes complete information about both the micro-causal dynamics that drive the system and the system's earlier micro-states and boundary conditions. \ti{Incompressible explanations} cannot be replaced without explanatory loss by shorter explanations that avoid crawling the causal web.
+
+If an explanation is \ti{compressible}, then explaining the macro-property arbitrarily far into the future takes some fixed and finite amount of explanatory effort, no matter how far into the future your explanation reaches. For example, phenomena in \ti{ALL Life} are compressible, where \ti{ALL Life} is the cellular automata setup with one rule: A cell is alive at a given time whether or not it or any of its neighbors were alive or dead at the previous moment.
+
+Only some cellular automata, including the Game of Life, support incompressible explanations for contained phenomena. This has been rigorously proven for some i.e. the Game of Life.
+
+Weak emergence comes in degrees, scaling from ``immediately deducible upon inspection of the specification or rules generating it'' to behavior that is ``deducible in hindsight from the specification after observing the behavior'' to finally behavior that is ``impossible to deduce from the specification''. Similarly, Explanatory incompressibility can be arrayed into similar stages. So, since weak emergence depends on explanatory incompressibility, weak emergence also comes in stages or degrees.
+
+Bedau's definition of Weak emergence applies to all systems that have macro-behavior with only incompressible explanations. If we could directly identify what it is about micro-causal interactions that make them incompressible, then we might be able to construct a direct definition of weak emergence.
+
+Study of such properties have yielded the following observations about the intrinsic properties of micro-causal dynamics that require incompressible explanations:
+
+\begin{itemize}
+    \item Massively parallel micro-level populations of independent and autonomous agents that interact with their neighbors and, restrictedly to some degree, in their local environment
+    \item Interactions among the agents and their environments are typically non-linear and synergistic, so that the behavior of an agent is highly sensitive to its local context
+\end{itemize}
+
+The yield that the behavior of complex systems are impossible to predict, even given complete prior micro info, without full simulation.
+
+Many scientists and philosophers alike assume that emergence and reduction are incompatible. A typical form of reductionism is mereological supervenience a la Kim. But, usefully, Weak emergence is compatible with most reduction (as opposed to Strong emergence which is compatible with no reduction).
+
+The distinction between explanations or reductions that hold only \ti{in principle} versus those that hold also \ti{in practice} is important. For example, a reductive generative explanation might exist to explain from macro to micro \ti{in principle}, but be unhelpful for explaining weak emergent phenomena \ti{in practice}. Reasons why could be
+\begin{itemize}
+    \item Some relevant micro-details required for the explanation might be unknown and/or inaccessible
+    \item the explanation might be too complex and tedious for anyone ot work through without the aid of a computer simulation (but still workable in principle)
+\end{itemize}
+
+Simulation implies that all Weakly emergent properties do in fact have micro-to-macro explanations. This distinction between \ti{in principle} and \ti{in practice} helps defend that Weak emergence fits the two hallmarks of emergence: dependence of macro on micro, autonomy of macro from micro. The incompressible structure of the macro makes it independent from the micro.
+
+``The subtle way in which weak emergence balances principles and practices is summarized with the awkward but apt notion of in principle irreducibility in practice.''
+
+``We can put these points together by saying that weak emergent phenomena are in principle irreducible in practice.''
+
+There is still a distinction of \ti{robustness} of Weak emergence. For example: ``Physicists in some instances have mathematically proved that the critical behavior of some large class of physical systems is insensitive to almost all details about the system, but in most cases one has merely empirical evidence that a physical system exhibits universal behavior. Nevertheless, this empirical evidence can be very strong.''
+
+But why can't we just say that Weak emergence is all in the mind? A worry: ``The existence of in principle irreducible downward causation is an ontological matter, because it involves the real existence of a certain kind of causal process.'' Most people studying emergence are concerned with finding possible \ti{new powers} like in a Strongly emergent context. But Weak emergence differs precisely on this point. ``This difference between reducibility in principle and in practice is the difference between strong and weak emergence.''
+
+Other attempts with Weak emergence, like with Silverstein and McGeeve, brand Weak emergence as merely epistemic and not genuinely ontological. They define epistemological emergence to apply to any property that is ``reducible to or determined by the intrinsic properties of the ultimate constituents of the objects or system'' but is ``very difficult for us to explain, predict, or derive \dots on the basis of the ultimate constituents''. And a reductive consequence for macro phenomena immediately follows: ``In principle, in such cases the higher-level feature, rule or law is a logical consequence of some lower-level feature, rule or law''
+
+But the key observation to have is that this is just a result of definitions. It is ``presumed that all apparently emergent phenomena are merely apparent, and have a true, reductive and non-emergent explanation. This implies that attributions of emergence are merely admissions of our ignorance of the true, reductive and non-emergence explanation''.
+
+``If our best scientific theories construe certain phenomena as emergent (because in principle they are irreducible), that does not show us anything about nature.''
+
+However, the Game of Life and similar cellular automata show clear counter-examples to this line of reasoning. We are clearly not missing the necessary scientific theories to explain behavior in the Game of Life. We know all the information. The epistemic essence of emergence that has been pointed to does not generalize to Weak emergence as Bedau defines. ``If something has an indirect epistemological definition, it does not follow that it is just in the mind''.
+
+A succinct argument for Weak emergence not just being in the mind:
+\begin{quote}
+    the indirect epistemological definition is produced by and reflects a distinctive underlying ontological status or structure in nature. Incompressibility of explanations is a consequence of the objective complexity of the local micro-causal interactions that are ultimately generating the emergent behavior being explained. The micro-causal web is real and objective, and the incompressible causal pathways of weak emergent phenomena have a distinctive epistemological consequence. Note that the explanatory incompressibility that defines weak emergence applies to the explanations of any naturalistic epistemic agent, in principle. Just like us, any non-human epistemic agent will have to work through the objective complexity of the local micro-causal interactions. Thus, weak emergence is not merely in the mind, but refers to objective complexity in the objective natural world that is in principle irreducible in practice. (pp. 11)
+\end{quote}
+
+Computer simulations are useful for talking about Weak emergence because they ``produce some of the most striking examples of weak emergent phenomena''. The computer itself is exhibiting Weakly emergent behavior. So, computers are important as evidence for Weak emergence in complex natural systems (we have no practical alternative, considering the definition of Weak emergence. it would be hard to test such hypotheses in nature).
+
+\begin{quote}
+The indirect epistemological role of computer simulations in explaining weak emergence might fuel a revival of the belief that weak emergence is in some sense merely epistemological. But this would be a mistake. The weak emergence exhibited in jamming traffic and dividing vesicles is not merely epistemological. Traffic jams and vesicles require incompressible explanations because of their objective, intrinsic micro-causal complexity. \tb{Traffic jams and vesicles are not just in the mind}. (pp. 13)
+\end{quote}
+
+Finally, Weak emergence is special because of its \ti{dynamical} nature. The canonical example of emergence is the mapping of a mental state to a brain state, \ti{synchronically}. This kind of emergence is \ti{static} (as opposed to \ti{dynamic}) because of the synchronic conditions. But, this allows the trivial derivability from the macro-state from the micro-state. Weak emergence's dynamic nature disallows this, there is no such trivial derivation since there are many time steps that are related differently and complicatedly at the high- and low-level. This is an ontological property, and ``underscores why weak emergence is not merely in the mind''.
+
+Conclusions:
+\begin{quote}
+    Any naturalistic epistemic agent who tries to explain it [macro-state] will have to use incompressible explanations. Weak emergence is the macro-level mark of incompressible complexity in a network of micro-causal interactions. When the objective micro-causal web is sufficiently complex, all explanations of its macro-behavior are incompressible. The resulting weak emergence is not just in the mind
+\end{quote}
+
+%------------------------------------------------
+%------------------------------------------------
 % TODO
 \annbibtitle{Wolfram S. 1985}{Undecidability and Intractability in Theoretical Physics}
 
+%------------------------------------------------
+%------------------------------------------------
 % TODO
 \annbibtitle{McLaughin B. P. 1992}{The Rise and Fall of British Emergentism}
 
+%------------------------------------------------
+%------------------------------------------------
 % TODO
 \annbibtitle{McLaughin B. P. 1997}{Emergence and Supervenience}
 
+%------------------------------------------------
+%------------------------------------------------
 \annbibtitle{Hempel C., Oppenheim P. 1965}{On the Idea of Emergence}
 
 The key observation is that people attribute to emergence much more than they should. For example, emergent phenomenon are commonly thought of as
@@ -234,9 +320,13 @@ But, upon close analysis, this paper concludes that these intuitions about emerg
 
 Rather than thinking of emergence as an ontological even, think of it as merely epistemic. Consider psychology. Our brain is made of chemicals and we do study the chemistry involved in the processes of psychology, but we do not have an explanation of high-level psychological concepts in terms of the low-level chemistry (or physics, for that matter). So, the psychological phenomena are emergent from the chemistry, but they are not metaphysically new or unpredictable. We just, with our present theories and understanding, have not explained the high level in terms of the low level. So, as an epistemic condition, psychological properties are emergent. But when we do figure such an explanation, psychology will no longer be emergent.
 
+%------------------------------------------------
+%------------------------------------------------
 % TODO
 \annbibtitle{Searle J. 1992}{Reductionism and the Intractability of Consciousness}
 
+%------------------------------------------------
+%------------------------------------------------
 \annbibtitle{Dennett D. C. 1991}{Real Patterns}
 
 Consider the question ``are beliefs real?'' Is it correct to \ti{believe} in centers of gravity? Why or why not? There are examples of people that argue these kinds of beliefs are obviously unreal and others that argue that they are obviously real (e.g. Dretske).
@@ -254,6 +344,8 @@ A final thought:
 Fine tuning could of course reduce these probabilities (of modeling which method was used to create a bar code pattern), but that is not my point. My point is that even if the evidence is substantial that the discernible pattern is produced by one process rather than another, it can be rational to ignore these differences and use the simplest pattern description (e.g. bar code) as one's way of organizing the data \dots
 \end{quote}
 
+%------------------------------------------------
+%------------------------------------------------
 \annbibtitle{Humphreys P. 1997}{How Properties Emerge}
 
 The exclusion argument:
