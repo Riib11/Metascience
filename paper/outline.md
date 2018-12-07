@@ -4,7 +4,7 @@ Possible Titles:
 - Dependent Autonomous Dependence
 - Autonomous Dependent Autonomy
 - Is Mind just in the Emergence?
-- Emergence Process
+- The Emergence Procession
 
 0. Abstract
     Argued problems with accepting a layering of reality via some manner of non-reductive emergence turn out to stem not from a specific conception of emergence but rather from the non-specificity of most conceptions of emergence so far considered. Any bet on emergence being \ti{real} or \ti{unreal} should be refunded. I argue that a specification of emergence as process-centric, causally efficacious, and ontologically-novel both nearly addresses the causal overdetermination, downward-causation and epistemic-not-ontological arguments against such strong emergentism, as well as explains its own development.
