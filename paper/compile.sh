@@ -1,0 +1,2 @@
+pdflatex *.tex
+open *.pdf
