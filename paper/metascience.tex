@@ -10,14 +10,18 @@
 \usepackage{etoolbox} % block quotes
 \usepackage{setspace} % linespacing
 \usepackage{xcolor}
-\definecolor{linkcolor}{rgb}{0.0, 0.7, 0.5}
-\usepackage[colorlinks, allcolors=linkcolor]{hyperref} % citation hyperlinks
+\usepackage[nottoc,other]{tocbibind}
 
 %------------------------------------------------
 % Settings
 %------------------------------------------------
 \onehalfspacing
 \AtBeginEnvironment{quote}{\singlespacing}
+\renewcommand{\tocbibname}{}
+% \renewcommand\bibname{\centerline{my-references}\global\def\bibname{my-references}}
+
+\definecolor{linkcolor}{rgb}{0.0, 0.7, 0.5}
+\usepackage[colorlinks, allcolors=linkcolor]{hyperref} % citation hyperlinks
 
 %------------------------------------------------
 % Commands
@@ -29,7 +33,7 @@
 
 % citations
 \renewcommand{\cite}[1]{\hyperlink{#1}{#1}}
-\newcommand{\reference}[3]{\bibitem{#1} \hypertarget{#1}{} #1. \ti{#2}}
+\newcommand{\reference}[2]{\bibitem{#1} \hypertarget{#1}{}. #1. \ti{#2}}
 
 % annotated bibliography
 \newcommand{\annbibtitle}[2]{\subsection*{#1. \ti{#2}}}
@@ -40,7 +44,7 @@
 % Title
 %------------------------------------------------
 \begin{center}
-	\huge{\bf Dependent Autonomy} % paper title
+	\huge{\bf Weak Emergence as a Process} % paper title
     \\[0.75cm] 
 	\large{Henry Blanchette} % paper author
     \\[0.5cm]
@@ -52,7 +56,7 @@
 % Abstract
 %------------------------------------------------
 \begin{abstract}
-	This is the abstract.
+	Argued problems with accepting a layering of reality via some manner of non-reductive emergence turn out to stem not from a specific conception of emergence but rather from the non-specificity of most conceptions of emergence so far considered. Any bet on emergence being \ti{real} or \ti{unreal} should be refunded. I argue that a specification of emergence as process-centric, causally efficacious, and ontologically-novel both nearly addresses the causal overdetermination, downward-causation and epistemic-not-ontological arguments against such strong emergentism, as well as explains its own development.
 \end{abstract}
 
 %------------------------------------------------
@@ -71,22 +75,26 @@ A thought that a previous philosopher wrote about (\cite{Wilson J. 2018}).
 % TODO: decide if newpage or not
 \newpage
 % TODO: order once all the entries are in
-\begin{thebibliography}{9}
-
-\reference{Wilson J. 2018}{Metaphysical Emergence}
-    {Department of Philosophy at University of Toronto, ON CA}
-
-\reference{Fodor J. A. 1974}{Special Sciences}
-    {\ti{Synthese}, Vol. 28, No. 2 (Oct., 1974), pp. 97-115. Springer}
-
-\reference{Bedau M. 2018}{Downward Causation and the Autonomy of Weak Emergence}
-    {Department of Philosophy at Reed College, OR USA}
+\section*{\centering References}
+\begin{thebibliography}{0}
 
 \reference{Bedau M. 2008}{Is Weak Emergence Just in the Mind?}
     {Minds and Machines 18:443–459. Springer}
 
-\reference{Wolfram S. 1985}{Undecidability and Intractability in Theoretical Physics}
-    {Physical Review Letters, Volume 54 Number 8. The American Physical Society}
+\reference{Bedau M. 2018}{Downward Causation and the Autonomy of Weak Emergence}
+    {Department of Philosophy at Reed College, OR USA}
+
+\reference{Dennett D. C. 1991}{Real Patterns}
+    {Reprinted in M. A. Bedau \& P. Humphreys (Eds.). (2008). \ti{Emergence: Contemporary readings in philosophy and science} (pp. 189-206). Cambridge: MIT Press}
+
+\reference{Fodor J. A. 1974}{Special Sciences}
+    {\ti{Synthese}, Vol. 28, No. 2 (Oct., 1974), pp. 97-115. Springer}
+
+\reference{Hempel C., Oppenheim P. 1965}{On the Idea of Emergence}
+    {Reprinted in M. A. Bedau \& P. Humphreys (Eds.). (2008). \ti{Emergence: Contemporary readings in philosophy and science} (pp. 61-68). Cambridge: MIT Press}
+
+\reference{Humphreys P. 1997}{How Properties Emerge}
+    {Reprinted in M. A. Bedau \& P. Humphreys (Eds.). (2008). \ti{Emergence: Contemporary readings in philosophy and science} (pp. 111-126). Cambridge: MIT Press}
 
 \reference{McLaughin B. P. 1992}{The Rise and Fall of British Emergentism}
     {Reprinted in M. A. Bedau \& P. Humphreys (Eds.). (2008). \ti{Emergence: Contemporary readings in philosophy and science} (pp. 19-60). Cambridge: MIT Press}
@@ -94,17 +102,14 @@ A thought that a previous philosopher wrote about (\cite{Wilson J. 2018}).
 \reference{McLaughin B. P. 1997}{Emergence and Supervenience}
     {Reprinted in M. A. Bedau \& P. Humphreys (Eds.). (2008). \ti{Emergence: Contemporary readings in philosophy and science} (pp. 81-98). Cambridge: MIT Press}
 
-\reference{Hempel C., Oppenheim P. 1965}{On the Idea of Emergence}
-    {Reprinted in M. A. Bedau \& P. Humphreys (Eds.). (2008). \ti{Emergence: Contemporary readings in philosophy and science} (pp. 61-68). Cambridge: MIT Press}
-
 \reference{Searle J. 1992}{Reductionism and the Irredicibility of Conciousness}
     {Reprinted in M. A. Bedau \& P. Humphreys (Eds.). (2008). \ti{Emergence: Contemporary readings in philosophy and science} (pp. 61-68). Cambridge: MIT Press}
 
-\reference{Dennett D. C. 1991}{Real Patterns}
-    {Reprinted in M. A. Bedau \& P. Humphreys (Eds.). (2008). \ti{Emergence: Contemporary readings in philosophy and science} (pp. 189-206). Cambridge: MIT Press}
+\reference{Wilson J. 2018}{Metaphysical Emergence}
+    {Department of Philosophy at University of Toronto, ON CA}
 
-\reference{Humphreys P. 1997}{How Properties Emerge}
-    {Reprinted in M. A. Bedau \& P. Humphreys (Eds.). (2008). \ti{Emergence: Contemporary readings in philosophy and science} (pp. 111-126). Cambridge: MIT Press}
+\reference{Wolfram S. 1985}{Undecidability and Intractability in Theoretical Physics}
+    {Physical Review Letters, Volume 54 Number 8. The American Physical Society}
 
 \end{thebibliography}
 
@@ -112,7 +117,8 @@ A thought that a previous philosopher wrote about (\cite{Wilson J. 2018}).
 % Annotated Bibliography
 %------------------------------------------------
 \newpage
-\section*{Annotated Bibliography}
+\section*{\centering Annotated Bibliography}
+\bigskip \bigskip
 
 %------------------------------------------------
 %------------------------------------------------
@@ -141,8 +147,8 @@ Kim's overdetermination argument:
 
 There are two instances of the problem:
 \begin{enumerate}
-    \item[I.] $S \squigrightarrow S^*$ and $P \squigrightarrow S^*$ (classical overdetermination)
-    \item[II.] $S \squigrightarrow P^*$ and $P \squigrightarrow P^*$ (downward cuasation)
+    \item[I.] $S \rightsquigarrow S^*$ and $P \rightsquigarrow S^*$ (classical overdetermination)
+    \item[II.] $S \rightsquigarrow P^*$ and $P \rightsquigarrow P^*$ (downward cuasation)
 \end{enumerate}
 
 Proposed solutions:
@@ -151,7 +157,7 @@ Proposed solutions:
     \item Eliminativism: $S, S^*$ aren't real
     \item Epiphenomenalism: $S, S^*$ are not causally efficacious.
     \item Reductive physicalism: $S$ is not distinct from $P$.
-    \item \tb{Strong emergentism}: Not every low-level effect has a low-level cause; deny $P \squigrightarrow P^*$.
+    \item \tb{Strong emergentism}: Not every low-level effect has a low-level cause; deny $P \rightsquigarrow P^*$.
     \item \tb{Non-reductive physicalism}: Deny that overdetermination is problematic in a two-rock-throwing way.
 \end{enumerate}
 
@@ -161,11 +167,36 @@ Note that this denies physicalism.
 
 \subsubsection*{Chapter 2}
 
+This chapter focusses on \ti{Non-Reductive Physicalism}. NRP incorporates two conditions:
 
+\begin{itemize}
+    \item \ti{Token Identity of Powers Condition}: Every token power of an apparently higher-level feature​ $S$​, on a given occasion,is identical with a token power of a lower-level feature $P$​ ​on which $S$​ ​synchronically materially depends, on that occasion.
+    \item \ti{Proper Subset of Powers Condition}: Token higher-level feature $S$ has, on a given occasion, a non-empty proper sibset of the token powers of hte token lower-level feature $P$ on which $S$ synchronically materially depends, on that occasion.
+\end{itemize}
+
+There are several ways to \ti{realize} the relationship between the realizers and the realized in emergenece compatible with NRP:
+
+\begin{itemize}
+    \item \ti{Functionalist}: realized types are higher-level types associated with causal roles that, on a given occasion, are played by tokens of realizer types. A causal role is just a collection of powers.
+    \item \ti{Merelogical}: realized tokens or types are propert parts of base tokens or types respectively. This yields an emergence in the opposite direction of how it is typically concieved (parts are emergent from their wholes).
+    \item \ti{Determinable/Determinate}: there is a relationship between type and token properties in terms of increasing specificity.
+    \item \ti{Elimination in Degrees of Freedom}: An entity $E$ is Weakly (ontologically) emergent from some entities $e_i$ if (1) $E$ is composed of the $e_i$ as a result of imposing some constraints on the $e_i$ and (2) for some characteristic state $S$ of $E$ at least one of the DOF required to characterize a realizing system of $E$ as being in $S$ is eliminated from the DOF required to cahracterize $E$ as being in $S$.
+\end{itemize}
+
+The emergent properies' \ti{distinctive efficacy} is important to their metaphysical robustness. Leibniz's law yields that since realized properties have a proper subset of powers of their relizer properties, they cannot be identical, thus $S \neq P$. This counters reductive physicalism.
+
+To address the problme of overdetermination and downward causation, Wilson shows some graphs that make use of the PSP relationship between the realized and the realizers. They conclude that never do we have to posit that some double-arrow is produced when there seems to only be room for one.
+
+The schema for weak emergence is that $S$ and $P$ are both distinct and both causally efficacious. So, a higher-level feature $S$ is \tb{Weakly emergent} from lower level token features $P$ on a given occasion just in case, on that occasion, (1) $S$ synchronically materially depends on $P$, and (2) $S$ and $P$ satisfy the PSP condition.
+
+Merricks has a slightly different overdetermination argument against emergence. It yields that for both the realizers and the realized properties to be causally efficacious, either one needs to cause the other to be efficacious or they are sufficiently efficatious only together. This argument cuts at Strong emergence, but doesn't seem to work on NRP.
 
 \subsubsection*{Chapter 3}
 \subsubsection*{Chapter 4}
+
 \subsubsection*{Chapter 5}
+
+
 
 %------------------------------------------------
 %------------------------------------------------
