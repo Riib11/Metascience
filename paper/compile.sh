@@ -1,2 +1,1 @@
 pdflatex *.tex
-open *.pdf

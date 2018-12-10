@@ -1,14 +1,13 @@
 \documentclass{article}
 
-%------------------------------------------------
+%-------------------------------------------------------------------------------
 % TODO general list
-%------------------------------------------------
-% - make sure that periods come before closing quotes
+%-------------------------------------------------------------------------------
+% - 
 
-
-%------------------------------------------------
+%-------------------------------------------------------------------------------
 % Imports
-%------------------------------------------------
+%-------------------------------------------------------------------------------
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{geometry}
@@ -18,10 +17,11 @@
 \usepackage{xcolor}
 \usepackage[nottoc,other]{tocbibind}
 
-%------------------------------------------------
+%-------------------------------------------------------------------------------
 % Settings
-%------------------------------------------------
+%-------------------------------------------------------------------------------
 \onehalfspacing
+\AtBeginEnvironment{abstract}{\onehalfspacing}
 \AtBeginEnvironment{quote}{\singlespacing}
 \renewcommand{\tocbibname}{}
 % \renewcommand\bibname{\centerline{my-references}\global\def\bibname{my-references}}
@@ -29,9 +29,9 @@
 \definecolor{linkcolor}{rgb}{0.0, 0.7, 0.5}
 \usepackage[colorlinks, allcolors=linkcolor]{hyperref} % citation hyperlinks
 
-%------------------------------------------------
+%-------------------------------------------------------------------------------
 % Commands
-%------------------------------------------------
+%-------------------------------------------------------------------------------
 \newcommand{\tx}[1]{\text{#1}}
 \newcommand{\ti}[1]{\textit{#1}}
 \newcommand{\tb}[1]{\textbf{#1}}
@@ -39,18 +39,18 @@
 
 % citations
 \renewcommand{\cite}[1]{\hyperlink{#1}{#1}}
-\newcommand{\reference}[3]{\bibitem{#1} \hypertarget{#1}{} #1. \ti{#2}. #3}
+\newcommand{\reference}[3]{\bibitem{#1} \hypertarget{#1}{} #1. \ti{#2}. #3.}
 
 % annotated bibliography
 \newcommand{\annbibtitle}[2]{\subsection*{#1. \ti{#2}}}
 
-\begin{document} % +===+===+===+===+===+===+===+
+\begin{document} % +===+===+===+===+===+===+===+===+===+===+===+===+===+===+
 
-%------------------------------------------------
+%-------------------------------------------------------------------------------
 % Title
-%------------------------------------------------
+%-------------------------------------------------------------------------------
 \begin{center}
-	\huge{\bf The Weak Emergence Procession} % paper title
+	\huge{\bf Procession: Weak Emergence} % paper title
     \\[0.75cm] 
 	\large{Henry Blanchette} % paper author
     \\[0.5cm]
@@ -58,41 +58,101 @@
     \\[1.0cm]
 \end{center}
 
-%------------------------------------------------
+%-------------------------------------------------------------------------------
 % Abstract
-%------------------------------------------------
+%-------------------------------------------------------------------------------
 \begin{abstract}
-	Argued problems with accepting a layering of reality via some manner of non-reductive emergence turn out to stem not from a specific conception of emergence but rather from the non-specificity of most conceptions of emergence so far considered. Any bet on emergence being \ti{real} or \ti{unreal} should be refunded. I argue that a specification of emergence as process-centric, causally efficacious, and ontologically-novel both nearly addresses the causal overdetermination, downward-causation and epistemic-not-ontological arguments against such strong emergentism, as well as explains its own development.
+	Problems with accepting a layering of reality via some manner of non-reductive emergence turn out to stem not from a specific conception of emergence but rather from the non-specificity of most conceptions of emergence so far considered. Any bet on emergence being \ti{real} or \ti{unreal} should be refunded. I argue that a specification of emergence as process-centric, causally efficacious, and ontologically-novel both nearly addresses the causal overdetermination, downward-causation and epistemic-not-ontological arguments against such strong emergentism, as well as explains its own development.
 \end{abstract}
-
-%------------------------------------------------
-% Introduction
-%------------------------------------------------
-\section{Introduction}
-
-This is the introduction.
-% Citation example:
-A thought that a previous philosopher wrote about (\cite{Wilson J. 2018}).
 
 \section{Concepts of Emergence}
 
-\section{Epistemic and Ontological Considerations}
+``Emergence'' means as mysterious as it seems. The goal of this paper is to engage with the idea of in a top-down approach, by progressively increasing the technicality of what I mean when I write ``emergence'' (often with the help of some preceeding adjectives). So, for example in the Concepts of Emergence section when I talk about emergence very generally, I am intentionally leaving the specifications of what such a reference could entail as undecided and open. From the start, I attempt to assume the minimum of what comes to a reader's mind when they read ``emergence.''
+
+My goal is \ti{not} to redefine ``emergence'' from the start and then show that when others use the same word they have subtly violated my definition. Definitions will prove important in theory I use to narrow what \ti{kind} of emergence I mean, but the specification of ``emergence'' in the first place I will take as a primarily empirical investigation.
+
+% TOPIC: history of specifying emergence
+% explain British Emergentist situation
+% be general, and leave the following concepts ambiguous: ontological, epistemological, strong, weak.
+
+In colloqial use, ``emergence'' describes the result, often a pattern, in a complexity that is simple to explain in an abstract but informal. The concept has been used in all sorts of literature, but can this term be put to important theoretical use? The brief bloom of the British Emergentists illustrate an attempt at this endeavor in a legitimately novel circumstance very relevant to science and philosophy.
+
+In the middle of the 20th century, a popular and concerning problem was that of explaining all of chemical bonding in terms of newly-acclaimed and hugely successful physical theories. The expectation was that it should be possible, since the theories described the entirety of the observed relevant features of the participants of chemical bonding. Nevertheless, the physical theories were innaccurate.
+
+There are two directions a conjectured (at the time) solution could take:
+\begin{enumerate}
+\item
+    The physical theories do not take into account more fundamental properties relevant the interaction of atoms. (\ti{downward appeal})
+\item
+    The physical theories do not take into account chemical properties that only apply to the interactions of atoms and are not derived from physical properties of atoms i.e. mass, charge, etc. (\ti{upward appeal})
+\end{enumerate}
+
+I name them as the \ti{downward appeal} and the \ti{upward appeal} to bring into focuss what is unique about this instance of applying the British Emergentist idea. The downward appeal is intuitive, as it almost-monotonically describes the direction of physics for the entirety of its scientific history. But at this point in the 20th century, the upward appeal gained some reasonable empirical evidence. Experiment after experiment, it was starting to seem like a purely chemical theory of bonding --- one that explicitly rejected derivation from physics --- would be the only option left that would maintain the physical theories that were so rebustly correct in almost every other prediction so far. What is novel here is that the physical theory came first, and then the upward appeal came second, as apposed to the historic direction of such invenstigation.
+
+What would be the implications of the upward appeal, should it turn out to be correct? As the British Emergentists held, it would stratiy reality into some sort of hierarchy. One level of the hierarchy would be \ti{the physical}, and another, higher, layer would be \ti{the chemical}. The higher-lower relationship characterizes that chemical things consist of physical things. But the key distinctiveness between the layers of the hierarchy is that each layer has its own set of natural laws. It might be that some laws apply at multiple layers, but it is a least possible for some layers to have laws that some other layers do not i.e. some chemical laws about bonding do not apply to the physical. This hierarchy was projected to extend to other fields of study as well, where the lowest level of the hierarchy is typically referred to as ``physics'' without loss of generality should it turn out to be something more fundamental than physics that has not yet been explored. The levels above physics are reffered to as the \ti{special sciences} as they intuitively have an emergent character beyond physics. The ordering and seperation of the layers was not meant to be an empirical claim, but serves as a scheme for why it serves to be, at least, theoretically useful:
+\[
+    \cdots <
+    \tx{ Physics } <
+    \tx{ Chemistry } <
+    \tx{ Biology } <
+    \tx{ Psychology } <
+    \tx{ Sociology } <
+    \tx{ Political Science } <
+    \cdots
+\]
+
+This grand scheme, however, was short-lived. Later on in the same centuty, physicists eventually developed a causally reductive, if not conceptually intuitive, explanation for chemical bonding in terms of quantum mechanics. Of course, this specific science is still young and under heavily development to this day, but as empirical evidence goes it was a desicive blow to the British Emergetist dogma in the eyes of the philisophical community. If the only empirical counterexample (and non-constructive at that) was overturned against British Emergentism, then there was little left to hold its sway. And though this specific strain of Emergentism has failed, it still has sparked and interest in some intriguing questions.
+
+% other canonical examples of emergence
+The example of chemical bonding was far from the only theoretical example of emergence as this tradition saw it. There were several other canonical examples, including conciousness, free will, life, and reproduction. The viewing of these phenomenon as emergent stemmed primarily from the colloqial sense of emergence this section behgan in reference to, but especially conciousness and free will have developed into large philosophical topics that increasingly beg for a specification of ``emergence''. Additionally, the somewhat unexpected reduction of quantum mechanics seems to shift at least some onus onto the naive emergentist to justify why the intuition for identifying emergence is correct, and that it is a concept beyond just explanatory vagueness.
+
+% utility of the concept of emergence:
+% - special sciences (Fodor)
+% - features of explanations (Dennett)
+
+But what of the hierarchy of studies that the British Emergentists postulated. The contention is of either allowing emergence, which allows laws for some levels in the hierarchy that are not derivable from laws of lower levels in the hierarchy, or disallowing emergence which should, in some way, make the hierarchy collapse on its lower level. It seems that in some ways of meaning ``emergence'', this contention is problematic. In other ways, perhaps it is not. \cite{Fodor J. A. 1974} describes a distinction between two sperspectives opposing emergence:
+
+\begin{itemize}
+    \item The \ti{Unity of Science} views that each science has as its fundamental aim the construction of a lowest-level-termed (i.e. physically-termed) explanation of its studyied phenomena
+    \item The \ti{Generality of Physics} views that each instance of a phenomena studied by a science is completely explainable in lowest-level (i.e. physical) terms.
+\end{itemize}
+
+The problem with the Unity view is its implication that the more successful the special sciences are, the more reason there is to abandon them; the special sciences most commonly do not aim to reduce their explanations to physically-termed ones so to forward their projects is to drift further and further off into the clouds, away from a correct landing posisition on the solid, physical ground. This is a problem because it does not seem to match at all the history of progress in the special sciences very well well independent from physics. There is a wide range of ``closeness-to-physics'' over all special sciences, but there are obvious examples e.g. almost all social sciences. So, thus far we seem to have little reason to practice with the Unity claim.
+
+On the other hand, the Generality view is much more in line with the endeavors of most scientists. The Generlity of Physics allows special scientists to forward explanations of phenomena in terms that they don't even dream to reduce to physics while still accepting that there is, somehow, a physical reduction of any phenomenon instance to which their explanation applies. In other words, all phenomena are physical in nature, but abstract explanations are nontheless useful.
+
+What makes an explanation useful? They key question to answer is ``useful for what?''. \cite{Dennett D. C. 1991} illustrates two degrees of utility when it comes to explanations: accuracy and simplicity. These features generally trade-off, and over a variety of circumstances the valuation of one compared to the other can change. With this in mind, emergence seems most readily to yield explanations of simplicity over accuracy. Take for example the chemical bonding case, where we actually do have a lower-level explanation. Before the development of quantum mechanical explanations, chemists had a theory of chemical bonding in exclusively chemical terms. One motivation for developing a physical theory was that the chemical theory had exceptions --- it lacked precision --- and of course a physical theory should have obsolute precision. Yet, while the quantum mechanical theory of chemical bonding is universal accepted throughout the chemistry community today, chemists still often use the chemistry-termed theories for their (relative) simplicity among other reasons.
+
+\section{Epistomological and Ontological Considerations}
+
+% how emergence could be all in the mind
+
+The considerations ending the previous section provoke an important test for any specification of emergence: ``is emergence just in the mind?'' If something seems emergent in light of an explanation that trades precision for simplicity (as would be claimed if one decided that chemical bonding was truely emergent from atomic interactions) or something of the like, then being emergent is not a property of the thing itself. It is in the eye of of the explainer. If this epistomological basis for emergence is accepted, then the project of specifying ``emergence'' devolves into a study of how humans prefer explanations and how they first come to explain somewhat complex phenomena before learning the real \ti{true} behind.
+
+Although the described project would interseting to explore, it is certainly a concession of the original \ti{feel} of ``emergence''. If to be ``emergent'' is just to be crudely (and possibly usefully) explained, then emergence has not metaphysical substance, which was clearly the driving force behind the canonical examples of applying emergence to consciousness, free will, etc. Obviously we do not have a physically-reductive explanation of either, and it is not unlikely that we might never, but is to assume that one does exist an act of epistemic humility or the opposite? And is to appeal to emergence an act of arrogance?
+
+Take, for example, consciousness. If after some time $t$ we have not found a physically-reductive explanation for it and we have not found a proof that one mustn't exist, then it is not implied that one does not exist, of course. And for not $t$ will this be true. But how long do we have to wait to be justified in assuming there is none? Although puzzling on the surface, questions like these tend to dissolve as science around the topic develops. At one time it was wondered how % TODO- not sure if this part is necessary, go onto substance instead
+
+Consciousness has remained a popular mystery thoughout all of recorded history, and even with all recent technological innovations, we seem to have raised more questions than we have answered in regards to it. 
+
+% implications of purely epistomological emergence
+
+% motivations and evidence for ontological emergence e.g. the success of the special sciences
 
 \section{Strong and Weak Emergence}
 
 \section{The Procession}
 
-%------------------------------------------------
+%-------------------------------------------------------------------------------
 % Bibliography
-%------------------------------------------------
+%-------------------------------------------------------------------------------
 % TODO: decide if newpage or not
 \newpage
 % TODO: order once all the entries are in
 \section*{\centering References}
 \begin{thebibliography}{11}
 
-\reference{Bedau M. 2008}{Is Weak Emergence Just in the Mind?}
-    {Minds and Machines 18:443–459. Springer}
+\bibitem{Bedau M. 2008} \hypertarget{Bedau M. 2008}{} Bedau M. 2008. Is Weak Emergence Just in the Mind? Minds and Machines 18:443–459. Springer.
 
 \reference{Bedau M. 2018}{Downward Causation and the Autonomy of Weak Emergence}
     {Department of Philosophy at Reed College, OR USA}
@@ -126,15 +186,15 @@ A thought that a previous philosopher wrote about (\cite{Wilson J. 2018}).
 
 \end{thebibliography}
 
-%------------------------------------------------
+%-------------------------------------------------------------------------------
 % Annotated Bibliography
-%------------------------------------------------
+%-------------------------------------------------------------------------------
 \newpage
 \section*{\centering Annotated Bibliography}
 \bigskip \bigskip
 
-%------------------------------------------------
-%------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 % TODO
 \annbibtitle{Wilson J. 2018}{Metaphysical Emergence}
 \subsubsection*{Chapter 1}
@@ -148,7 +208,8 @@ Notions of \ti{dependence}: ``Mereological (`part-whole') determination; Causati
 
 Notions of \ti{autonomy}: ``Nomological but not metaphysical supervenience; Non-fundamental novelty (of properties, powers, laws, entities); Fundamental novelty (of properties, powers, forces/interactions, laws, entities); non-additivity/non-linearity; ``Downward'' causal efficacy; Multiple realizability or compositional plasticity; Symmetry breaking; Elimination in degrees of freedom; The holding of a proper subset relation between token powers. “Epistemic criteria” notions include: In-principle failure of deducibility, predictability, or explicability; Predictability, but only by simulation; Lack of conceptual or representational entailment; theoretical/mathematical singularities.''
 
-Kim's overdetermination argument:
+\smallskip
+\noindent Kim's overdetermination argument:
 \begin{enumerate}
     \item Dependence: Special science features depend on base features.
     \item Reality: Both of those things (special science features, base features) are real.
@@ -158,13 +219,13 @@ Kim's overdetermination argument:
     \item Non-Overdetermination: Effects are not at once caused by two sufficient causes.
 \end{enumerate}
 
-There are two instances of the problem:
+\noindent There are two instances of the problem:
 \begin{enumerate}
     \item[I.] $S \rightsquigarrow S^*$ and $P \rightsquigarrow S^*$ (classical overdetermination)
     \item[II.] $S \rightsquigarrow P^*$ and $P \rightsquigarrow P^*$ (downward cuasation)
 \end{enumerate}
 
-Proposed solutions:
+\noindent Proposed solutions:
 \begin{enumerate}
     \item Substance dualism or Pan/Proto-Psychism: $S, S^*$ do not respectively depend on $P, P^*$.
     \item Eliminativism: $S, S^*$ aren't real
@@ -269,8 +330,8 @@ Wilson's objects to Bedau:
 
 
 
-%------------------------------------------------
-%------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \annbibtitle{Fodor J. A. 1974}{Special Sciences}
 
 Consider and contrast two scientifically fundamental perspectives: the \ti{Unity of Science} and the \ti{Generality of Physics}. The Unity claim is actually stronger than the Generality claim; Unity of Science requires all sciences to have as their aim the construction of a physics-termed explanation of their studied phenomena, while Generality of Physics requires only that instances of studied phenomena be completely explainable in terms of physics. The Unity claim is, in fact, the central claim of Redictive Physicalism.
@@ -321,8 +382,8 @@ A way of stating the classical reductionism view: things which belong to differe
 If science is to be unified, then all such taxonomies must apply to the same things. If physics is to be basic science, then each of these things had better be a physical thing. But it is not further required that the taxonomies which the special sciences employ themselves reduce to the taxonomy of physics. It is not required, and it is probably not true.
 \end{quote}
 
-%------------------------------------------------
-%------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \annbibtitle{Bedau M. 2018}{Downward Causation and the Autonomy of Weak Emergence}
 
 In this paper, Bedau explores a foundation of Weak emergence as \ti{derivability only by simulation} (or \ti{underivable except by simulation}).
@@ -363,8 +424,8 @@ Conclusion:
 The advent of modern philosophy is conventionally presented as the Cartesian triumph over Aristotelian scholasticism. An Aristotelian thesis that attributed nature on the basis of a rich dependence on generating context was supplanted by the Cartesian antithesis that attributed reductionistic essences independent of context. Computer simulations allow weak emergence to extend reductionism into new territory, but they do so by embodying the idea that something's nature can depend on its genesis. Thus, the macro can depend on the context-sensitive process from which it arises and by which it is maintained. In this way, weak emergence can be viewed as a new synthesis.
 \end{quote}
 
-%------------------------------------------------
-%------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \annbibtitle{Bedau M. 2008}{Is Weak Emergence Just in the Mind?}
 
 The goal is to present a basis for Weak emergence in terms of \ti{explanatory incompressibility}. Then, once this is established, Bedau will defend the metaphysical nature of Weak emergence by critically appealing to its \ti{dynamical} nature.
@@ -436,8 +497,8 @@ Conclusions:
     Any naturalistic epistemic agent who tries to explain it [macro-state] will have to use incompressible explanations. Weak emergence is the macro-level mark of incompressible complexity in a network of micro-causal interactions. When the objective micro-causal web is sufficiently complex, all explanations of its macro-behavior are incompressible. The resulting weak emergence is not just in the mind
 \end{quote}
 
-%------------------------------------------------
-%------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \annbibtitle{Wolfram S. 1985}{Undecidability and Intractability in Theoretical Physics}
 
 There is an analogy between theoretical physics and computation. In theoretical physics, there are laws and mathematical relations that describe adn predict physical phenomena. It is a matter of computing the application of these laws to some inputs to get the description and prediction of a given physical system.
@@ -454,8 +515,8 @@ Note taht if the CA (cellular automata) is confined to a total number of sites $
 This chapter has suggested that many physical systems are computationally irredicable so that their own evolution is effectively the most efficient procedure for determining their future. As a consequence, many questions about these systems can be answered only by very lengthy or potentially infinite computations. But some questions answerable by simpler computations may still be forumulated.
 \end{quote}
 
-%------------------------------------------------
-%------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \annbibtitle{McLaughin B. P. 1992}{The Rise and Fall of British Emergentism}
 
 This paper is about the ideation and history of a certain emergentism that prospered at the beginning of the 20th century. Ultimate, it has all but dropped out of accepted philosophical discourse by now.
@@ -482,8 +543,8 @@ Another center is the idea of causal non-composability. If $A$ is an emergence f
 
 The chemistry example is key because during the rise of British Emergentism, there was string intuition and evidence behind the idea that chemical bonds involved causal powers that were not merely physical (at the lowest level). But later in the 20th century, quantum mechanics offered just such a physical explanation. If this could happen for the primary motivating case for British Emergentism, why not for the other cases? And so this emergentism it is not held in high regard even if we don't have an explanation of all of biology in terms of physics.
 
-%------------------------------------------------
-%------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \annbibtitle{McLaughin B. P. 1997}{Emergence and Supervenience}
 
 The paper starts with a brief history of British Emergentism, very similar to \ti{The Rise and Fall of British Emergentism}.
@@ -558,8 +619,8 @@ Closes with this
 I am sympathetic to the view that conscious properties are not emergent, even though they do not admit of functional analysis. For I believe that conscious properties are a posteriori identical with physical properties (most likely, very abstract neurophysiological properties). If they are, then the supervenience principles (the trans- ordinal laws) connecting such physical properties with conscious properties will be nonfundamental. For they will be deducible from laws governing the physical properties in question. (Identities, you will recall, are necessary truths.) However, whether that is so is a question beyond the scope of this essay. I here simply affirm my faith in reductive materialism. Hopefully, the notion of an emergent property defined above can help to sharpen what is at issue in the debate between emergent materialism and reductive materialism.
 \end{quote}
 
-%------------------------------------------------
-%------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \annbibtitle{Hempel C., Oppenheim P. 1965}{On the Idea of Emergence}
 
 The key observation is that people attribute to emergence much more than they should. For example, emergent phenomenon are commonly thought of as
@@ -574,8 +635,8 @@ But, upon close analysis, this paper concludes that these intuitions about emerg
 
 Rather than thinking of emergence as an ontological even, think of it as merely epistemic. Consider psychology. Our brain is made of chemicals and we do study the chemistry involved in the processes of psychology, but we do not have an explanation of high-level psychological concepts in terms of the low-level chemistry (or physics, for that matter). So, the psychological phenomena are emergent from the chemistry, but they are not metaphysically new or unpredictable. We just, with our present theories and understanding, have not explained the high level in terms of the low level. So, as an epistemic condition, psychological properties are emergent. But when we do figure such an explanation, psychology will no longer be emergent.
 
-%------------------------------------------------
-%------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 % TODO
 \annbibtitle{Searle J. 1992}{Reductionism and the Irreducibility of Consciousness}
 
@@ -646,8 +707,8 @@ Perspectives on supervenience arguments:
 
 
 
-%------------------------------------------------
-%------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \annbibtitle{Dennett D. C. 1991}{Real Patterns}
 
 Consider the question ``are beliefs real?'' Is it correct to \ti{believe} in centers of gravity? Why or why not? There are examples of people that argue these kinds of beliefs are obviously unreal and others that argue that they are obviously real (e.g. Dretske).
@@ -665,8 +726,8 @@ A final thought:
 Fine tuning could of course reduce these probabilities (of modeling which method was used to create a bar code pattern), but that is not my point. My point is that even if the evidence is substantial that the discernible pattern is produced by one process rather than another, it can be rational to ignore these differences and use the simplest pattern description (e.g. bar code) as one's way of organizing the data \dots
 \end{quote}
 
-%------------------------------------------------
-%------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \annbibtitle{Humphreys P. 1997}{How Properties Emerge}
 
 The exclusion argument:
@@ -702,4 +763,4 @@ The it immediately follows that we can write
 
 From this line of revised argumentation, we can pose a new definition of ``emergent property'': A property is emergent if and only if it has novel causal powers from its object's parts.
 
-\end{document} % +===+===+===+===+===+===+===+
+\end{document} % +===+===+===+===+===+===+===+===+===+===+===+===+===+===+
