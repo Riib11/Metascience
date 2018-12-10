@@ -188,11 +188,25 @@ The most well-known implementation is John Conway's Game of Life, but any discre
 \item The simulation can be run for any finite number of generations.
 \end{enumerate}
 
-For the Game of Life simulation, the State is a matrix containing boolean values. The Rule describes what the value of each entry of a State turns to, given the values of the 8 entries surrounding it. 
+For the Game of Life simulation, the State is a matrix containing boolean values (referred to as cells and usually represented by pixels). The Rule describes what the value of each cell of a given State turns to, given the values of the 8 cells surrounding it. The Game of Life is one of a family of similar simulations called cellular automata. There are $2^9$ possible locally-ruled cellular automata that play out on a two-dimensional grid, of which the Game of Life is just one ($2^9 = 2^8 \cdot 2$ is derived from the fact that a Rule takes into account the $8$ surrounding cells' values, which has $2^8$ possibilities, and then assigns a new value to the center cell, of which there are $2$ possibilities).
 
-% implications of purely epistomological emergence
+Conway's Game of Life is especially notably among all of these possibilities. An uninteresting Rule is the one which assigns a cell to $0$ for any possible arrangement of its neighbors (the $0$-Rule). It is uninteresting because no matter the initial State, its simple and obvious what every other generation afterwards will look like. So, the Game of Life is somewhat unique in producing the pretty life-like patterns that are its namesake; not just any rule could make those patterns.
 
-% motivations and evidence for ontological emergence e.g. the success of the special sciences
+But is the activity of the Game of Life any different, in an abstract sense, from the $0$-Rule? On the surface, it might seem like the generations of the Game of Life are harder to predict than the $0$-Rule, scaling in difficulty with the number of generations outward. But could that not just be because our human minds process the $0$-Rule more easily than the Game of Life's rules? For the emergence of livliness in the Game of Life to be purely epistomological, the answer must be yes.
+
+But, obviously, the answer is no; the complexity surely is objective. The formal proof of these kinds of theorems are non-trivial, however. In what Bedau calls the \ti{complexity sciences}, several formal senses of computational complexity have been specified. An abstract specification of computational complexity is
+
+\begin{quote}
+\ti{Computation complexity}: the number of atomic steps, applied to facts of any level of generality about the simulation, required to exactly derive the resulting state of the simulation after some number $n$ generations, as a function of $n$.
+\end{quote}
+
+\ti{Atomic steps} are steps in a Turing machine where ``facts of any level of generality about the simulation'' are reprented by strings.
+
+These new tools give a deeper insight into Bedau's specification of emergent phenomena as phenomena that are only generatively explainable in a incompressible way. An incompressible explanation is one that must run through the entirery of the lowest-level applications of the Rule (for each and every cell) for each successive generation, with no short-cuts. This explains the inutition that $0$-Rule is uninteresting: we have a compressible generative explanation (as previously described), and with constant complexity at that.
+
+% TODO: somewhere use the ``traffic jams are not just in the mind'' quote!
+
+The application of emergence to these simulation examples is especially intriguing because not only do we have the lowest-level explanation for these phenomena, but designed them and seem to know everything about how they operate. 
 
 \section{Strong and Weak Emergence}
 
