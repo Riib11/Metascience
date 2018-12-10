@@ -169,7 +169,7 @@ If an explanation is \ti{compressible}, then explaining the macro-property abitr
 (\cite{Bedau M. 2008})
 \end{quote}
 
-Proving that there is no compressible, generative explanation for some emergent property in nature, such as conciousness or free will, seems to be an extremeley difficult task. In fact, a negative proof is probably impossible, so finding indirect evidence is likely the best way to make progress on those fronts, under this view of emergence. But a certain, recently-developed source of examples provides a constructive case for viewing emergence in terms of explanatory compressibility: discrete simulation (most commonly via computer).
+Proving that there is no compressible, generative explanation for some emergent property in nature, such as conciousness or free will, seems to be an extremeley difficult task. In fact, a negative proof is probably impossible, so finding indirect evidence is likely the best way to make progress on those fronts, under this view of emergence. But a certain recently-developed source of examples provides a constructive case for viewing emergence in terms of explanatory compressibility: discrete simulation (most commonly via computer).
 
 % TODO: game of life example figs
 % some good ones: https://copy.sh/life/?pattern=13enginecordership
@@ -183,18 +183,16 @@ The most well-known implementation is John Conway's Game of Life, but any discre
 
 \begin{enumerate}
 \item The simulation is designed with a unambiguous, unchanging Rule. The Rule takes as input a State and gives as output a State, where a State is a full description of everything about the simulation other than the Rule.
-\item To run the simulation, it is given a initial State as its current State.
+\item To start running the simulation, it is given a initial State as its current State.
 \item Then, the simulation applies its Rule to the current State and sets its current State to be the result. This completion of one iteration of this step is counted as one \ti{generation} of the simulation.
 \item The simulation can be run for any finite number of generations.
 \end{enumerate}
 
-For the Game of Life simulation, the State is a matrix containing boolean values (referred to as cells and usually represented by pixels). The Rule describes what the value of each cell of a given State turns to, given the values of the 8 cells surrounding it. The Game of Life is one of a family of similar simulations called cellular automata. There are $2^9$ possible locally-ruled cellular automata that play out on a two-dimensional grid, of which the Game of Life is just one ($2^9 = 2^8 \cdot 2$ is derived from the fact that a Rule takes into account the $8$ surrounding cells' values, which has $2^8$ possibilities, and then assigns a new value to the center cell, of which there are $2$ possibilities).
+For the Game of Life simulation, the State is a 2-dimensional grid containing boolean values (referred to as cells and usually represented by pixels). The Rule describes what the value of each cell of a given State turns to, given the values of the 8 cells surrounding it. The Game of Life is one of a family of similar simulations called cellular automata. There are $2^9$ possible locally-ruled cellular automata that play out on a two-dimensional grid, of which the Game of Life is just one ($2^9 = 2^8 \cdot 2$ is derived from the fact that a Rule takes into account the $8$ surrounding cells' values, of which there are $2^8$ possible configurations, and then assigns a new value to the center cell, of which there are $2$ possibilities).
 
-Conway's Game of Life is especially notably among all of these possibilities. An uninteresting Rule is the one which assigns a cell to $0$ for any possible arrangement of its neighbors (the $0$-Rule). It is uninteresting because no matter the initial State, its simple and obvious what every other generation afterwards will look like. So, the Game of Life is somewhat unique in producing the pretty life-like patterns that are its namesake; not just any rule could make those patterns.
+Conway's Game of Life is especially notably among all of these possibilities. An example of an uninteresting Rule is the one which assigns a cell to $0$ for any possible arrangement of its neighbors (the $0$-Rule). It is uninteresting because no matter the initial State, it is simple and obvious what every subsequent generation will look like. So, the Game of Life is somewhat special in producing the pretty life-like patterns that are its namesake; not just any rule could make those patterns.
 
-But is the activity of the Game of Life any different, in an abstract sense, from the $0$-Rule? On the surface, it might seem like the generations of the Game of Life are harder to predict than the $0$-Rule, scaling in difficulty with the number of generations outward. But could that not just be because our human minds process the $0$-Rule more easily than the Game of Life's rules? For the emergence of livliness in the Game of Life to be purely epistomological, the answer must be yes.
-
-But, obviously, the answer is no; the complexity surely is objective. The formal proof of these kinds of theorems are non-trivial, however. In what Bedau calls the \ti{complexity sciences}, several formal senses of computational complexity have been specified. An abstract specification of computational complexity is
+Is the activity of the Game of Life any different, in an abstract sense, from the $0$-Rule? On the surface, it might seem like the generations of the Game of Life are harder to predict than the $0$-Rule, scaling in difficulty with the number of generations outward. The meaning of \ti{hardness} needs to be specified to make sense of this judgment. If hardness is taken to just be the difficulty for some particular explainer (such as a human mind) to generatively explain the simulation, then the resulting emergence is just a description of the relation between the proces and the simulation. This would mean that the appearance of emergence in the Game of Life and its lack in $0$-Rule is not necessarily inherent to the simulations themselves. Of couse, this implies that emergence is a purely epistomological concept. For emergence to apply metaphysically and not just to a relation between simulations and explainers, an objective measure of explanatory dfficulty must be specified to impose an order of compressibility on possible generative explanations. In what Bedau calls the \ti{complexity sciences}, several formal senses of computational complexity (i.e. hardness, difficulty) have been specified. An abstract specification of computational complexity is
 
 \begin{quote}
 \ti{Computation complexity}: the number of atomic steps, applied to facts of any level of generality about the simulation, required to exactly derive the resulting state of the simulation after some number $n$ generations, as a function of $n$.
@@ -202,13 +200,15 @@ But, obviously, the answer is no; the complexity surely is objective. The formal
 
 \ti{Atomic steps} are steps in a Turing machine where ``facts of any level of generality about the simulation'' are reprented by strings.
 
-These new tools give a deeper insight into Bedau's specification of emergent phenomena as phenomena that are only generatively explainable in a incompressible way. An incompressible explanation is one that must run through the entirery of the lowest-level applications of the Rule (for each and every cell) for each successive generation, with no short-cuts. This explains the inutition that $0$-Rule is uninteresting: we have a compressible generative explanation (as previously described), and with constant complexity at that.
+These new tools give a deeper insight into Bedau's specification of emergent phenomena as phenomena that are only generatively explainable in a incompressible way. An incompressible explanation is one that must run through the entirety of the lowest-level applications of the Rule (for each and every cell) for each successive generation, with no short-cuts. This grounds the inutition that $0$-Rule is uninteresting: we have a compressible generative explanation (as previously described), and with constant complexity at that. For the Game of Life, on the other hand, it has not been formally proven that there is not a compressible generative explanation, but it is almost universally conjectured that this is true.
 
 % TODO: somewhere use the ``traffic jams are not just in the mind'' quote!
 
-The application of emergence to these simulation examples is especially intriguing because not only do we have the lowest-level explanation for these phenomena, but designed them and seem to know everything about how they operate. 
+The application of emergence to these simulation examples is especially intriguing because not only do we have the lowest-level explanation for these phenomena, but we designed them and know everything about how they operate. If emergence can appear under these circumstances, then it seems plausible that just such emergence could occur in other seemingly-emergent cases. With the Game of Life, the emergent phenomenon is the activity of the computer that simulates it (executing the incompressible generative explanation), so this is cleary a real, non-hypothetical, example on hard silicon.
 
 \section{Strong and Weak Emergence}
+
+The definition of ``emergence'' as Bedau puts it seems to be lacking in one of the original hallmarks of an emergent world: stratifying reality into a hierarchy. If to be emergent is to have a special arrangement of complexity, then is there really anything \ti{new} emerging? If the argument in the previous section that emergence is a metaphysical phenomenon and not just epistomological, then it is natural to expect emergence to add something to the ontology. Is the new thing to be a property, an entity, or something else?
 
 \section{The Procession}
 
