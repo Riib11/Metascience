@@ -24,7 +24,8 @@
 \AtBeginEnvironment{abstract}{\onehalfspacing}
 \AtBeginEnvironment{quote}{\singlespacing}
 \renewcommand{\tocbibname}{}
-% \renewcommand\bibname{\centerline{my-references}\global\def\bibname{my-references}}
+
+\graphicspath{ {./images/} }
 
 \definecolor{linkcolor}{rgb}{0.0, 0.7, 0.5}
 \usepackage[colorlinks, allcolors=linkcolor]{hyperref} % citation hyperlinks
@@ -123,6 +124,12 @@ On the other hand, the Generality view is much more in line with the endeavors o
 
 What makes an explanation useful? They key question to answer is ``useful for what?''. \cite{Dennett D. C. 1991} illustrates two degrees of utility when it comes to explanations: accuracy and simplicity. These features generally trade-off, and over a variety of circumstances the valuation of one compared to the other can change. With this in mind, emergence seems most readily to yield explanations of simplicity over accuracy. Take for example the chemical bonding case, where we actually do have a lower-level explanation. Before the development of quantum mechanical explanations, chemists had a theory of chemical bonding in exclusively chemical terms. One motivation for developing a physical theory was that the chemical theory had exceptions --- it lacked precision --- and of course a physical theory should have obsolute precision. Yet, while the quantum mechanical theory of chemical bonding is universal accepted throughout the chemistry community today, chemists still often use the chemistry-termed theories for their (relative) simplicity among other reasons.
 
+% TODO: talk about bar code maybe
+\begin{figure}[h]
+\centering
+\includegraphics[width=8cm]{barcode}
+\end{figure}
+
 \section{Epistomological and Ontological Considerations}
 
 % how emergence could be all in the mind
@@ -161,6 +168,27 @@ So to claim that a higher-level property $P$ is emergent from some lower levels 
 If an explanation is \ti{compressible}, then explaining the macro-property abitrarily far into the future takes some fixed and finite amount of explanatory effort, not matter how far int othe future your explanation reaches.
 (\cite{Bedau M. 2008})
 \end{quote}
+
+Proving that there is no compressible, generative explanation for some emergent property in nature, such as conciousness or free will, seems to be an extremeley difficult task. In fact, a negative proof is probably impossible, so finding indirect evidence is likely the best way to make progress on those fronts, under this view of emergence. But a certain, recently-developed source of examples provides a constructive case for viewing emergence in terms of explanatory compressibility: discrete simulation (most commonly via computer).
+
+% TODO: game of life example figs
+% some good ones: https://copy.sh/life/?pattern=13enginecordership
+
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=9cm]{gol01}
+% \end{figure}
+
+The most well-known implementation is John Conway's Game of Life, but any discrete simulation works in fundametally the same way:
+
+\begin{enumerate}
+\item The simulation is designed with a unambiguous, unchanging Rule. The Rule takes as input a State and gives as output a State, where a State is a full description of everything about the simulation other than the Rule.
+\item To run the simulation, it is given a initial State as its current State.
+\item Then, the simulation applies its Rule to the current State and sets its current State to be the result. This completion of one iteration of this step is counted as one \ti{generation} of the simulation.
+\item The simulation can be run for any finite number of generations.
+\end{enumerate}
+
+For the Game of Life simulation, the State is a matrix containing boolean values. The Rule describes what the value of each entry of a State turns to, given the values of the 8 entries surrounding it. 
 
 % implications of purely epistomological emergence
 
