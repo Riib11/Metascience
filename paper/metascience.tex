@@ -134,7 +134,9 @@ What makes an explanation useful? They key question to answer is ``useful for wh
 
 % how emergence could be all in the mind
 
-The considerations ending the previous section provoke an important test for any specification of emergence: ``is emergence just in the mind?'' If something seems emergent in light of an explanation that trades precision for simplicity (as would be claimed if one decided that chemical bonding was truely emergent from atomic interactions) or something of the like, then being emergent is not a property of the thing itself. It is in the eye of of the explainer. If this epistomological basis for emergence is accepted, then the project of specifying ``emergence'' devolves into a study of how humans prefer explanations and how they first come to explain somewhat complex phenomena before learning the real \ti{true} behind.
+The considerations ending the previous section provoke an important test for any specification of emergence: ``is emergence just in the mind?'' If something seems emergent in light of an explanation that, for example, trades precision for simplicity (as would be claimed if one decided that chemical bonding was truely emergent from atomic interactions), then a thing's being emergent is not a property of the thing itself - it is in the eye of of the explainer. If this epistomological basis for emergence is accepted, then the project of specifying ``emergence'' devolves into a study of how humans prefer explanations and how they first come to explain somewhat complex phenomena before learning the real \ti{true} behind.
+
+% TODO: talk about Searle's suggestion that we account for emergence just by redefining terms especially vis a vis consciousness. this concern though can be worked around by a gradually-narrowing specification of emergence as I practice in this paper
 
 Although the described project would interseting to explore, it is certainly a concession of the original \ti{feel} of ``emergence''. If to be ``emergent'' is just to be crudely explained (where a crude explanation may still be useful), then emergence does not have metaphysical substance, which was clearly the driving force behind the canonical examples of applying emergence to consciousness, free will, etc. Obviously we do not have a physically-reductive explanation of either, and it is not unlikely that we might never, but is to assume that one does exist an act of epistemic humility or the opposite? And is to appeal to emergence an act of arrogance?
 
@@ -179,6 +181,8 @@ Proving that there is no compressible, generative explanation for some emergent 
 % \includegraphics[width=9cm]{gol01}
 % \end{figure}
 
+% TODO: rather than use Game of Life, use cellular automata that I create myself
+
 The most well-known implementation is John Conway's Game of Life, but any discrete simulation works in fundametally the same way:
 
 \begin{enumerate}
@@ -188,7 +192,7 @@ The most well-known implementation is John Conway's Game of Life, but any discre
 \item The simulation can be run for any finite number of generations.
 \end{enumerate}
 
-For the Game of Life simulation, the State is a 2-dimensional grid containing boolean values (referred to as cells and usually represented by pixels). The Rule describes what the value of each cell of a given State turns to, given the values of the 8 cells surrounding it. The Game of Life is one of a family of similar simulations called cellular automata. There are $2^9$ possible locally-ruled cellular automata that play out on a two-dimensional grid, of which the Game of Life is just one ($2^9 = 2^8 \cdot 2$ is derived from the fact that a Rule takes into account the $8$ surrounding cells' values, of which there are $2^8$ possible configurations, and then assigns a new value to the center cell, of which there are $2$ possibilities).
+For the Game of Life simulation, the State is a 2-dimensional grid containing boolean values (referred to as cells and usually represented by pixels). The Rule describes what the value of each cell of a given State turns to, given the values of the 8 cells surrounding it. The Game of Life is one of a family of similar simulations called cellular automata. There are $2^{10}$ possible locally-ruled cellular automata that play out on a two-dimensional grid, of which the Game of Life is just one ($2^{10} = 2^9 \cdot 2$ is derived from the fact that to update a given cell a Rule takes into account the $9$ local cells' values (including the original cell itself), of which there are $2^9$ possible configurations, and then assigns a new value to the center cell, of which there are $2$ possibilities).
 
 Conway's Game of Life is especially notably among all of these possibilities. An example of an uninteresting Rule is the one which assigns a cell to $0$ for any possible arrangement of its neighbors (the $0$-Rule). It is uninteresting because no matter the initial State, it is simple and obvious what every subsequent generation will look like. So, the Game of Life is somewhat special in producing the pretty life-like patterns that are its namesake; not just any rule could make those patterns.
 
