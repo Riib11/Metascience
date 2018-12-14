@@ -3,7 +3,8 @@
 %-------------------------------------------------------------------------------
 % TODO general list
 %-------------------------------------------------------------------------------
-% - 
+% - go fix todos esp. where you want to put in Searles thing
+% - rewrite abstract
 
 %-------------------------------------------------------------------------------
 % Imports
@@ -37,6 +38,7 @@
 \newcommand{\ti}[1]{\textit{#1}}
 \newcommand{\tb}[1]{\textbf{#1}}
 \newcommand{\p}{^\prime}
+\newcommand{\definition}{{\sc Definition.}\,}
 
 % citations
 \renewcommand{\cite}[1]{\hyperlink{#1}{#1}}
@@ -51,7 +53,7 @@
 % Title
 %-------------------------------------------------------------------------------
 \begin{center}
-	\huge{\bf Procession: Weak Emergence} % paper title
+	\huge{\bf Weak Emergence as Procession} % paper title
     \\[0.75cm] 
 	\large{Henry Blanchette} % paper author
     \\[0.5cm]
@@ -62,13 +64,14 @@
 %-------------------------------------------------------------------------------
 % Abstract
 %-------------------------------------------------------------------------------
+% rewrite or clean up
 \begin{abstract}
 	Problems with accepting a layering of reality via some manner of non-reductive emergence turn out to stem not from a specific conception of emergence but rather from the non-specificity of most conceptions of emergence so far considered. Any bet on emergence being \ti{real} or \ti{unreal} should be refunded. I argue that a specification of emergence as process-centric, causally efficacious, and ontologically-novel both nearly addresses the causal overdetermination, downward-causation and epistemic-not-ontological arguments against such strong emergentism, as well as explains its own development.
 \end{abstract}
 
 \section{Concepts of Emergence}
 
-``Emergence'' means as mysterious as it seems. The goal of this paper is to engage with the idea of in a top-down approach, by progressively increasing the technicality of what I mean when I write ``emergence'' (often with the help of some preceeding adjectives). So, for example in the Concepts of Emergence section when I talk about emergence very generally, I am intentionally leaving the specifications of what such a reference could entail as undecided and open. From the start, I attempt to assume the minimum of what comes to a reader's mind when they read ``emergence.''
+``Emergence'' means as mysterious as it seems. The goal of this paper is to engage with the idea of in a top-down approach, by progressively increasing the technicality of what I mean when I write ``emergence'' (often with the help of some preceding adjectives). So, for example in the Concepts of Emergence section when I talk about emergence very generally, I am intentionally leaving the specifications of what such a reference could entail as undecided and open. From the start, I attempt to assume the minimum of what comes to a reader's mind when they read ``emergence.''
 
 My goal is \ti{not} to redefine ``emergence'' from the start and then show that when others use the same word they have subtly violated my definition. Definitions will prove important in theory I use to narrow what \ti{kind} of emergence I mean, but the specification of ``emergence'' in the first place I will take as a primarily empirical investigation.
 
@@ -114,11 +117,11 @@ The example of chemical bonding was far from the only theoretical example of eme
 But what of the hierarchy of studies that the British Emergentists postulated. The contention is of either allowing emergence, which allows laws for some levels in the hierarchy that are not derivable from laws of lower levels in the hierarchy, or disallowing emergence which should, in some way, make the hierarchy collapse on its lower level. It seems that in some ways of meaning ``emergence'', this contention is problematic. In other ways, perhaps it is not. \cite{Fodor J. A. 1974} describes a distinction between two perspectives opposing emergence:
 
 \begin{quote}
-    \tb{Definition}. (\ti{Unity of Science}) The Unity of Science views that each science has as its fundamental aim the construction of a lowest-level-termed (i.e. physically-termed) explanation of its studied phenomena.
+    \definition (\ti{Unity of Science}) The Unity of Science views that each science has as its fundamental aim the construction of a lowest-level-termed (i.e. physically-termed) explanation of its studied phenomena.
 \end{quote}
 
 \begin{quote}
-    \tb{Definition}. (\ti{Generality of Physics}) The Generality of Physics views that each instance of a phenomena studied by a science is completely explainable in lowest-level (i.e. physical) terms.
+    \definition (\ti{Generality of Physics}) The Generality of Physics views that each instance of a phenomena studied by a science is completely explainable in lowest-level (i.e. physical) terms.
 \end{quote}
 
 The problem with the Unity view is its implication that the more successful the special sciences are, the more reason there is to abandon them; the special sciences most commonly do not aim to reduce their explanations to physically-termed ones so to forward their projects is to drift further and further off into the clouds, away from a correct landing position on the solid, physical ground. This is a problem because it does not seem to match at all the history of progress in the special sciences very well well independent from physics. There is a wide range of ``closeness-to-physics'' over all special sciences, but there are obvious examples e.g. almost all social sciences. So, thus far we seem to have little reason to practice with the Unity claim.
@@ -197,9 +200,9 @@ The most well-known implementation is John Conway's Game of Life, but any discre
 
 For the Game of Life simulation, the State is a 2-dimensional grid containing boolean values (referred to as cells and usually represented by pixels). The Rule describes what the value of each cell of a given State turns to, given the values of the 8 cells surrounding it. The Game of Life is one of a family of similar simulations called cellular automata. There are $2^{10}$ possible locally-ruled cellular automata that play out on a two-dimensional grid, of which the Game of Life is just one ($2^{10} = 2^9 \cdot 2$ is derived from the fact that to update a given cell a Rule takes into account the $9$ local cells' values (including the original cell itself), of which there are $2^9$ possible configurations, and then assigns a new value to the center cell, of which there are $2$ possibilities).
 
-Conway's Game of Life is especially notably among all of these possibilities. An example of an uninteresting Rule is the one which assigns a cell to $0$ for any possible arrangement of its neighbors (the $0$-Rule). It is uninteresting because no matter the initial State, it is simple and obvious what every subsequent generation will look like. So, the Game of Life is somewhat special in producing the pretty life-like patterns that are its namesake; not just any rule could make those patterns.
+Conway's Game of Life is especially notably among all of these possibilities. An example of an uninteresting Rule is the one which assigns a cell to $0$ for any possible arrangement of its neighbors (the 0-Rule). It is uninteresting because no matter the initial State, it is simple and obvious what every subsequent generation will look like. So, the Game of Life is somewhat special in producing the pretty life-like patterns that are its namesake; not just any rule could make those patterns.
 
-Is the activity of the Game of Life any different, in an abstract sense, from the $0$-Rule? On the surface, it might seem like the generations of the Game of Life are harder to predict than the $0$-Rule, scaling in difficulty with the number of generations outward. The meaning of \ti{hardness} needs to be specified to make sense of this judgment. If hardness is taken to just be the difficulty for some particular explainer (such as a human mind) to generatively explain the simulation, then the resulting emergence is just a description of the relation between the proces and the simulation. This would mean that the appearance of emergence in the Game of Life and its lack in $0$-Rule is not necessarily inherent to the simulations themselves. Of couse, this implies that emergence is a purely epistomological concept. For emergence to apply metaphysically and not just to a relation between simulations and explainers, an objective measure of explanatory dfficulty must be specified to impose an order of compressibility on possible generative explanations. In what Bedau calls the \ti{complexity sciences}, several formal senses of computational complexity (i.e. hardness, difficulty) have been specified. An abstract specification of computational complexity is
+Is the activity of the Game of Life any different, in an abstract sense, from the 0-Rule? On the surface, it might seem like the generations of the Game of Life are harder to predict than the 0-Rule, scaling in difficulty with the number of generations outward. The meaning of \ti{hardness} needs to be specified to make sense of this judgment. If hardness is taken to just be the difficulty for some particular explainer (such as a human mind) to generatively explain the simulation, then the resulting emergence is just a description of the relation between the proces and the simulation. This would mean that the appearance of emergence in the Game of Life and its lack in 0-Rule is not necessarily inherent to the simulations themselves. Of couse, this implies that emergence is a purely epistomological concept. For emergence to apply metaphysically and not just to a relation between simulations and explainers, an objective measure of explanatory dfficulty must be specified to impose an order of compressibility on possible generative explanations. In what Bedau calls the \ti{complexity sciences}, several formal senses of computational complexity (i.e. hardness, difficulty) have been specified. An abstract specification of computational complexity is
 
 \begin{quote}
 \ti{Computation complexity}\footnote{This is also known as \ti{time-complexity} in computer science.}: the number of atomic steps, applied to facts of any level of generality about the simulation, required to exactly derive the resulting state of the simulation after some number $n$ generations, as a function of $n$.
@@ -207,7 +210,7 @@ Is the activity of the Game of Life any different, in an abstract sense, from th
 
 \ti{Atomic steps} are steps in a Turing machine where ``facts of any level of generality about the simulation'' are represented by strings.
 
-These new tools give a deeper insight into Bedau's specification of emergent phenomena as phenomena that are only generatively explainable in a incompressible way. An incompressible explanation is one that must run through the entirety of the lowest-level applications of the Rule (for each and every cell) for each successive generation, with no short-cuts. This grounds the intuition that $0$-Rule is uninteresting: we have a compressible generative explanation (as previously described), and with constant complexity at that. For the Game of Life, on the other hand, it has not been formally proven that there is not a compressible generative explanation, but it is almost universally conjectured that this is true.
+These new tools give a deeper insight into Bedau's specification of emergent phenomena as phenomena that are only generatively explainable in a incompressible way. An incompressible explanation is one that must run through the entirety of the lowest-level applications of the Rule (for each and every cell) for each successive generation, with no short-cuts. This grounds the intuition that 0-Rule is uninteresting: we have a compressible generative explanation (as previously described), and with constant complexity at that. For the Game of Life, on the other hand, it has not been formally proven that there is not a compressible generative explanation, but it is almost universally conjectured that this is true.
 
 % TODO: somewhere use the ``traffic jams are not just in the mind'' quote!
 
@@ -285,15 +288,15 @@ If $a \neq A$, then how could $a$ be causally sufficient but then also $A$, that
 \cite{Wilson J. 2018} counters this argument with a specification of Weak emergence based on a \ti{proper-subset} relation of powers between an emergent property and its realizer properties:
 
 \begin{quote}
-\tb{Definition.} (\ti{Weak emergence}) A token\footnote{Wilson is careful to the the ``token'' and ``type'' terminology, but I have left it mostly implicit in this paper. A property \ti{type} would be, say, ``the type of properties of being red,'' whereas a correspond token property of this property type would be ``this flower's property of being red.'' This distinction is relevant because, at a particular time, only a token property can be emergent since emergence stems from a relation between property instances that have causal powers. Property types do not have causal powers, even if all of their instances happen do. Type Theory is a very interesting abstract subject matter that expands past philosophy e.g. computer data types. In this paper, I use tokens implicitly and specify when, instead, I am referring to a property type.} higher-level property $S$ is Weakly emergent at some time $t$ if and only if $S$ has a relation of powers to token lower-level properties $P$ that satisfies both PSPC and TIPC at $t$.
+\definition (\ti{Weak emergence}) A token\footnote{Wilson is careful to the the ``token'' and ``type'' terminology, but I have left it mostly implicit in this paper. A property \ti{type} would be, say, ``the type of properties of being red,'' whereas a correspond token property of this property type would be ``this flower's property of being red.'' This distinction is relevant because, at a particular time, only a token property can be emergent since emergence stems from a relation between property instances that have causal powers. Property types do not have causal powers, even if all of their instances happen do. Type Theory is a very interesting abstract subject matter that expands past philosophy e.g. computer data types. In this paper, I use tokens implicitly and specify when, instead, I am referring to a property type.} higher-level property $S$ is Weakly emergent at some time $t$ if and only if $S$ has a relation of powers to token lower-level properties $P$ that satisfies both PSPC and TIPC at $t$.
 \end{quote}
 
 \begin{quote}
-\tb{Definition.} (\ti{Proper Subset of Powers Condition (PSPC)}) The relation of powers between a token higher-level property $S$ and token lower-level properties $P$ satisfies the PSPC if and only if $S$ has a non-empty subset of token powers of $P$, and $S$ materially-synchronically depends on $P$.
+\definition (\ti{Proper Subset of Powers Condition (PSPC)}) The relation of powers between a token higher-level property $S$ and token lower-level properties $P$ satisfies the PSPC if and only if $S$ has a non-empty subset of token powers of $P$, and $S$ materially-synchronically depends on $P$.
 \end{quote}
 
 \begin{quote}
-\tb{Definition.} (\ti{Token Identity of Powers Condition (TIPC)}) The relation of powers between a token higher-level property $S$ and token lower-level properties $P$ satisfies the TIPC if and only if every token power of $S$ is identical to some token power of $P$.
+\definition (\ti{Token Identity of Powers Condition (TIPC)}) The relation of powers between a token higher-level property $S$ and token lower-level properties $P$ satisfies the TIPC if and only if every token power of $S$ is identical to some token power of $P$.
 \end{quote}
 
 Going back to the baseball example, the Weak emergent view finds issue with how intuition is derived from analyzing a relation of existential-containment rather than casual-power-containment. Weak emergence allows that an emergent baseball to be one of the `two baseballs' that the overdetermination seems to yield as so unsavory. However, what is not addressed is the fact that the relation of causal powers between the baseball and the conglomeration of baseball-atoms happily satisfy PSPC and TIPC: each power of each baseball-atom relevant to the shattering is identical to a power of the baseball, and individual or sub-conglomerations of baseball-atoms has powers that the baseball does not, such as being a rubber baseball core.
@@ -301,29 +304,62 @@ Going back to the baseball example, the Weak emergent view finds issue with how 
 % TODO: what do i even mean by this lol
 \section{The Procession}
 
-So far I have developed two mostly-independent specifications for emergence, each detailed to address the questions (\ti{QI}) ``are emergent properties ontologically new?'' and (\ti{QII}) ``are emergent properties unproblematically causally efficacious?''. To broadly summarize the conditions:
+So far I have developed two mostly-independent specifications for emergence, each detailed to respond to these objections respectively: (OI) emergent properties are merely are not ontologically \ti{new} i.e. emergence is just in the mind, and (OII) emergent properties are problematically efficacious i.e. emergence yields problematic overdetermination. To progress, there needs to be an explanation for how these responses interact. To abstractly summarize the conditions that these responses put on emergent properties:
 
 \begin{itemize}
-\item[\ti{AI}.] An emergent higher-level property is a property underivable except by simulation from its lower-level realizers. This is an objective measure independent from epistemology, so an emergent property is ontologically \ti{new} when compared to its realizers.
-\item[\ti{AII}.] An emergent higher-level property is a property that has a strict subset of powers of its lower-level realizers. This allows that both the higher-level and the lower-level can exist distinctly, but also be causally efficacious with the same token powers.''
+\item[RI.] An emergent higher-level property is a property underivable except by simulation from its lower-level realizers. This is an objective measure independent from epistemology, so an emergent property is ontologically \ti{new} when compared to its realizers.
+\item[RII.] An emergent higher-level property is a property that has a strict subset of powers of its lower-level realizers. This allows that both the higher-level and the lower-level can exist distinctly, but also be causally efficacious with the same token powers.''
 \end{itemize}
 
-Consider 
-
-% TODO: next!
-% - consider bedau's response to overdetermnation (\cite{Bedau M. 2018})
-%   and how it compares and/or coincides with wilson's powers requirements
 % - consider how PSPC deals with epistomological concerns in comparison
 %   to complexity conditions
-% - suggest that a modified mixture of both is an answer to some important
-%   open questions about emergence. the mixture has to apply complexity to
-%   casual powers, and show how to get rid of 'resultants' which are just
-%   like the move-effect where the higher-level parts arent actually
-%   causally effective (that conciousness talk). basically the parts taht
-%   wilson says that bedau needs to add about causation
-% - show how thinking of the property type, emergence, is best thought of as
-%   a kind of procession (marchign sense, the carrying out of a process)
-%   something like that
+
+I shall refer to emergence only conditioned by RI to be Complexity emergence, and emergence only conditioned by RII to be PSPC emergence. So first of all, how does RII resolve the epistemological objection? Three conditions for the overdetermination argument are that (A2) both emergent and realizer properties are \ti{real}, (A3) emergent properties are causally efficacious, and (A4) emergent properties are distinct from their base properties. RII makes these conditions compatible. So, if $S$ is an emergent property, it cannot be just a property of an epistemic relation between an observer and a phenomenon epistemic relations are not real and causally efficacious properties of the involved entities themselves.
+
+However, a PSPC emergence seems to under-qualify Weak emergence. In the baseball example, it is taken on assumption that there is a baseball that is emergent from baseball-atoms, and then shown that this assumption is not problematic. I believe that this argument validly confirms that PSPC emergence is non-contradictory, but consider the result when ``baseball'' is replaced by something else. For example, is 0-Rule PSPC emergent? If it were, then it would emerge from the configurations of cells governed by the 0-Rule's Rule, so
+
+\begin{itemize}
+\item[\ti{(TIPC)}] Each token power that 0-Rule has is identical to the token power of some configuration of cells governed by the same rule as 0-Rule.
+\item[\ti{(PSPC)}] A configuration of cells governed by 0-Rule's Rule have powers other than 0-Rule, such as the power of a group of cells to form a $2 \times 2$ square. 0-Rule cannot form such a square (although, it could kill a previously-formed square of course).
+\end{itemize}
+
+This result is either eye-opening or concerning; in section 2, 0-Rule was clearly not emergent according to intuition. I think it is the latter. PSPC emergent while presenting a strong case for the causal efficacy of emergence, also admits trivially emergent properties. PSPC does not maintain a bit of the complex mysteriousness than made it interesting in the first place\footnote{Not that a reduction of emergence to something uninteresting and non-mysterious should be disallowed. I present this point as an intuitive judgment of what PSCP lacks that I formally described just before}. I will tie this in with a larger thesis after the next subtopic.
+
+% - consider bedau's response to overdetermnation (\cite{Bedau M. 2018})
+%   and how it compares and/or coincides with wilson's powers requirements
+
+Secondly, how does RI resolve the overdetermination objection? 
+
+% TODO: not sure how to tie this in:
+% For example, \ti{Dennett's lost sock center} --- ``the point defined as the center of the smallest sphere that can be inscribed around all the socks I have ever lost in my life'' --- is PSPC emergent because (TIPC) any power that Dennett's lost sock center manifests is 
+
+% talk about emergence being dynamic, like in \cite{Bedau M. 2018}
+
+How does RI interact with the overdetermination argument? The key idea is that, in all the description of Complexity emergence, the specification that emergent properties are ``synchronically materially dependent'' on their realizers is never made. \cite{Bedau M. 2018} makes clear that one of the main features of emergent properties in simulations is their dynamic nature. In the game of Life, the life-like properties are not about single generations, but about an overarching property of the interaction of many parts of the State over a large number of generations. This ties in neatly to Complexity emergence basis in \ti{generative explanations} rather than explanations of causation in any one generation (which are trivial in the case of the Game of Life). This perspective would suggest that in the baseball example, the baseball may be synchronically materially dependent on some atoms at a given time, but the key to its being a baseball is its behavior over time: ``\dots for a macrostate to manifest an emergent property many time steps need to pass. For a microstate to manifest a property, it must be manifested in one or two time-steps.'' (\cite{Bedau M. 2018}). One could imagine that if some atoms, due to purely random chance assembled into the shape of a baseball for a single instant and then disassembled once more, the happenstance configuration would not yield a higher-level baseball.
+
+This discussion of powers that PSPC emergence makes central is not to be abandoned however. A surface reading of PSPC emergence takes the realizer properties, $P$, of some emergent property $S$, to be from an immediately-lower level relative to $S$. E.g. for the emergent baseball, there is no discussion of the status of the material configurations between the levels of baseball-atoms and the baseball. Is the baseball also emergent from the baseball-molecules? from the baseball-rubber, baseball-cowhide, and baseball yarn? Or is there a hierarchy of emergence from the lowest level to the baseball-level? Such a hierarchy could not be easily stratified, because some of the $i$-level properties might emerge from both $(i-1)$-level and $(i-2)$-level properties. PSPC allows all of these possibilities, and in fact does not specify a specific kind of \ti{emergence-relation} at all. \cite{Wilson J. 2018} presents four accounts of emergence, all of which are compatible with PSPC:
+
+\begin{enumerate}
+    \item \ti{Functionalist}: Realized types are associated with causal roles that, on a given occasion, are played by tokens of realizer types. A causal role is just a collection of powers.
+
+    \item \ti{Mereological}: Realized tokens or types are proper parts of base tokens or types respectively. This yields an emergence in the opposite direction of how it is typically conceived (parts are emergent from their wholes).
+
+    \item \ti{Determinable/Determinate}: There is a relationship between type and token properties in terms of increasing specificity.
+
+    \item \ti{Elimination in Degrees of Freedom (EOF)}: An entity $E$ is Weakly (ontologically) emergent from some entities $e_i$ if (1) $E$ is composed of the $e_i$ as a result of imposing some constraints on the $e_i$ and (2) for some characteristic state $S$ of $E$ at least one of the DOF required to characterize a realizing system of E as being in S is eliminated from the DOF required to characterize $E$ as being in $S$.
+\end{enumerate}
+
+Complexity emergence objects to a mereological account because it disallows dynamic emergence, to a determinable/determinate account because generative explanations must be perfectly specific, and an EOF account because a generative explanation cannot restrict the degrees of freedom of the realizers. Still left is the functionalist account, and in it lies the connection to causal powers that PSPC and Complexity emergence can converge on.
+
+A \ti{causal role}, as a collection of powers, that an emergent property has is a proper subset of the powers of the realizers. In this specification, though, what is realized is a property \ti{type} rather than the token instance of the emergent property that actually \ti{has} actual token causal powers associated with the causal role. A causal role is not necessarily synchronic, and in fact most common examples of causal roles are dynamic in nature; one paradigm case of a causal role for a functionalist perspective is that of consciousness. Additionally, thinking of emergent property types in terms of causal roles neatly explains hierarchy of emergence and how Complexity emergence incorporates causal powers.
+
+Causal roles can be small or large, and there can be overlapping- or containment-relations between different causal roles. In this way, there are some hierarchical arrangements of emergence e.g. some emergent property type $A$ could be related to a causal role that is entirely contained by emergent property type $B$. However, this containment relation is only of the causal roles, and not of the property types, since $A$'s incompressible generative explanation does not necessarily explain $B$, and visa versa. This may not be obvious, however. Consider this example:
+
+\begin{quote}
+In the Game of Life, it is possible to create a universal Turing machine. The machine is made of interacting cells that take in some `program,' execute it, and then yield some output. Universal-Turing-machine-ness (UTM) is an emergent property type, and its causal role is the processing of the input and printing of the output. We can call the power-subset that is the processing of the input to be associated wit another emergent property type, Universal-Turing-machine-input-processing-ness (IP). An incompressible generative explanation of the UTM is to simulate the abstracted finite automata on a string that represents the input, an explanation that does not need to relate at all to the Rule for Game of Life. The input and output can be explained as strings that do not obey the Rule of Game of Life. However, IP cannot be incompressible generatively explained in this way even though its causal role is a subset of the causal role of UTM. IP needs to interact directly with the Rule of the Game of Life in order to present its output accurately to the output-printing causal role of the UTM. UTM is a higher-level type than IP.
+\end{quote}
+
+I call this specification of Weak emergence as a functionalist realization of Complexity emergence because procession as a type is related to an abstract role, where its instances also have in it types that are related to roles. For example, imagine a marching band. A marching band abstractly is not an instance of a procession, but once a token marching band starts marching down the street, the token is an instance of a procession. Then, inside the marching band, there are drummers and trombonists, flutists, flag-twirlers, etc. Each of these is a \ti{type} of marching-band participant, and the procession can be described in terms of the actions of the \ti{tokens} of these types that participate. The flutist type associates flutist tokens in the procession to a certain causal role, which interacts with its components in an incompressible way. But, before the procession begins, it is possible to incompressibly generatively explain what will happen in terms of the lower-level (in relation to the procession) types. There is a hierarchical but non-containment relation between emergent property types, having distinct emergent phenomenon at every non-base level.
 
 %-------------------------------------------------------------------------------
 % Bibliography
